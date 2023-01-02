@@ -1,6 +1,9 @@
-import { Fragment } from 'react';
-import './App.css';
+import { Index } from './components/pages/Index';
 
 export const App = () => {
-      return <Fragment>App</Fragment>;
+      return (
+            <>
+                  <Index />
+            </>
+      );
 };
