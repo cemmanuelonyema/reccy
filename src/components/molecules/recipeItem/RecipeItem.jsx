@@ -6,8 +6,8 @@ import styles from './RecipeItem.module.scss';
 
 export const RecipeItem = ({recipe}) => {
    return (
+                  <li className={styles.recipe}>
             <Link to={`/recipes/${recipe?.id}`}>
-                  <article className={styles.recipe}>
                         <div className={styles.recipe__imgBox}>
                               <img src={recipe?.image_url} alt="recipe image" className={styles.recipe__img}/>
                         </div>
@@ -17,7 +17,7 @@ export const RecipeItem = ({recipe}) => {
                                     Publisher: {recipe?.publisher}
                               </span>
                         </div>
-                  </article>
             </Link>
+                  </li>
       );
 }
