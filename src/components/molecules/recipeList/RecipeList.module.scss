@@ -1,11 +1,14 @@
-.recipes{
+@import '../../../styles/abstract/mixins.scss';
 
-    &__list{
+
+    .recipes__list{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 3.2rem;
-    
+        
+        @include respond(maxPhone600) {
+        grid-template-columns: 1fr;
+    }    
     }
-}
 
  

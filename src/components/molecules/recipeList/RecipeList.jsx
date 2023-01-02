@@ -6,12 +6,10 @@ export const RecipeList = () => {
       const datas = [1, 2, 3, 4, 5, 67, 8, 9, 0];
 
       return (
-           <section className={styles.recipes}>
-                <ul className= {`${styles.recipes__list} container`}>
+                <ul className= {`${styles.recipes__list}`}>
                         {datas.map((x,i) => (
                               <RecipeItem key={i}  />
                         ))}
                   </ul>
-            </section>
       );
 };
