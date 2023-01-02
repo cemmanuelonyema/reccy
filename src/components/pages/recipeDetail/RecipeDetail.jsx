@@ -3,10 +3,15 @@ import { useParams } from 'react-router-dom';
 //style
 import styles from './RecipeDetail.module.scss';
 
-export const RecipeDetail = () => {
+export const RecipeDetail = ({ recipe }) => {
+      //hooks
+      const { id } = useParams();
+      //useEffect
+      useEffect(() => {}, [id]);
+
       return (
             <section>
-                  <div className="container">
+                  <div className= {`${styles.container} container`}>
                         <div className="content">
                               <h1>{recipe?.title}</h1>
                               <div className="img-box">
