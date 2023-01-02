@@ -11,7 +11,11 @@
       "scripts": {
             "dev": "vite",
             "build": "vite build",
-            "preview": "vite preview"
+            "preview": "vite preview",
+            "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx --ignore-path ./.gitignore",
+            "lint:format": "prettier  --write \"./**/*.{js,jsx,ts,tsx,css,json}\" ",
+            "lint": "yarn lint:format && yarn lint:fix ",
+            "prepare": "husky install"
       },
       "dependencies": {
             "axios": "^1.2.2",
