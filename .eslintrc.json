@@ -1,0 +1,24 @@
+{
+      "extends": [
+            "react",
+            "eslint:recommended",
+            "plugin:react/recommended",
+            "plugin:import/recommended",
+            "plugin:jsx-a11y/recommended",
+            "plugin:react-hooks/recommended",
+            "eslint-config-prettier",
+            "eslint-config-airbnb",
+            "prettier"
+      ],
+      "settings": {
+            "react": {
+                  "version": "detect"
+            }
+      },
+
+      "rules": {
+            "no-console": "warn",
+            "react/prop-types": "off",
+            "react/self-closing-comp": "warn"
+      }
+}
