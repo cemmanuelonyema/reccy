@@ -1,0 +1,20 @@
+.recipe {
+  border: 1px solid black;
+
+  &__content {
+    padding: 1.2rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 1px solid black;
+  }
+
+  &__imgBox{
+    height: 15rem;
+    overflow: hidden;
+  }
+  &__img{
+    display: block;
+    object-fit: cover;
+  }
+}
