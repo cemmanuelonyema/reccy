@@ -10,39 +10,38 @@ export const RecipeDetail = ({ recipe }) => {
       useEffect(() => {}, [id]);
 
       return (
-            <section>
-                  <div className= {`${styles.container} container`}>
-                        <div className="content">
-                              <h1>{recipe?.title}</h1>
-                              <div className="img-box">
-                                    <img
+            <section className={styles.recipeDetail}>
+                  <div className= {`${styles.recipeDetail__container} container`}>
+                              <h1  className={styles.recipeDetail__title}>{recipe?.title}</h1>
+                              <div  className={styles.recipeDetail__imgBox}>
+                                    <img  className={styles.recipeDetail__img}
                                           src={recipe?.image_url}
                                           alt="recipe img"
                                     />
                               </div>
 
-                              <div className="recipe-content">
-                                    <div className="recipe__ingredients">
-                                          <h2 className="heading--2">
+                              <div className={styles.recipeDetail__content}>
+                                    <div  className={styles.recipeDetail__ingredients}>
+                                          <h2  className={styles.ingredient__title}>
                                                 Recipe ingredients
                                           </h2>
-                                          <ul className="recipe__ingredient-list">
-                                                <li className="recipe__ingredient">
-                                                      <svg className="recipe__icon">
+                                          <ul className={styles.ingredient__list}>
+                                                <li className={styles.ingredient__item}>
+                                                      <svg className={styles.ingredient__icon}>
                                                             <use href="src/img/icons.svg#icon-check"></use>
                                                       </svg>
-                                                      <div className="recipe__quantity">
+                                                      <div className={styles.ingredient__quantity}>
                                                             1000
                                                       </div>
-                                                      <div className="recipe__description">
-                                                            <span className="recipe__unit">
+                                                      <div className={styles.ingredient__description}>
+                                                            <span className={styles.ingredient__unit}>
                                                                   g
                                                             </span>
                                                             pasta
                                                       </div>
                                                 </li>
 
-                                                <li className="recipe__ingredient">
+                                                <li className={styles.ingredient__item}>
                                                       <svg className="recipe__icon">
                                                             <use href="src/img/icons.svg#icon-check"></use>
                                                       </svg>
@@ -59,34 +58,31 @@ export const RecipeDetail = ({ recipe }) => {
                                           </ul>
                                     </div>
 
-                                    <div className="recipe__directions">
-                                          <h2 className="heading--2">
+                                    <div  className={styles.recipeDetail__direction}>
+                                          <h3 className={styles.direction__tilte}>
                                                 How to cook it
-                                          </h2>
-                                          <p className="recipe__directions-text">
+                                          </h3>
+                                          <p className={styles.direction__text}>
                                                 This recipe was carefully
                                                 designed and tested by
-                                                <span className="recipe__publisher">
-                                                      {' '}
-                                                      {recipe?.publisher}
+                                                <span className={styles.directionText__highlight}>
+                                                      {recipe?.publisher}.
                                                 </span>
-                                                . Please check out directions at
+                                                 Please check out directions at
                                                 their website.
                                           </p>
                                           <a
-                                                className="btn--small recipe__btn"
                                                 href={recipe?.source_url}
                                                 target="_blank"
                                           >
                                                 <span>Directions</span>
-                                                <svg className="search__icon">
+                                                <svg>
                                                       <use href="src/img/icons.svg#icon-arrow-right"></use>
                                                 </svg>
                                           </a>
                                     </div>
                               </div>
-                        </div>
-                  </div>
+                              </div>
             </section>
       );
 };
