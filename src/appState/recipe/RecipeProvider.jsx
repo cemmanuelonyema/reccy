@@ -10,7 +10,7 @@ export const RecipeProvider = ({ children }) => {
             recipe: {},
             loading: true,
             currentPage: 1,
-            itemsPerPage: 10,
+            itemsPerPage: 12,
       };
 
       const [state, dispatch] = useReducer(recipeReducer, initialState);
@@ -58,6 +58,8 @@ export const RecipeProvider = ({ children }) => {
                         recipes: state.recipes,
                         recipe: state.recipe,
                         loading: state.loading,
+                        currentPage: state.currentPage,
+                        itemsPerPage: state.itemsPerPage,
                         getSearchRecipes,
                         getRecipe,
                   }}

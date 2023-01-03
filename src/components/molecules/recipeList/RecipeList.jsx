@@ -5,11 +5,15 @@ import styles from './RecipeList.module.scss';
 
 export const RecipeList = () => {
       //context hook
-      const { recipes } = useContext(RecipeContext);
+      const { recipes, currentPage, itemsPerPage } = useContext(RecipeContext);
+      //variables
+      const indexOfLastPage = currentPage * itemsPerPage;
+      const indexOfFirstPage = indexOfLastPage - itemsPerPage;
+      const currentItems = recipes.slice(indexOfFirstPage, indexOfLastPage);
 
       return (
             <ul className={`${styles.recipes__list}`}>
-                  {recipes.map((recipe, i) => (
+                  {currentItems.map((recipe, i) => (
                         <RecipeItem key={recipe.id} recipe={recipe} />
                   ))}
             </ul>
