@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { RecipeContext } from '../../../appState/recipe/RecipeProvider';
 import { RecipeItem } from '../recipeItem/RecipeItem';
-import styles from  './RecipeList.module.scss';
+import styles from './RecipeList.module.scss';
 
 export const RecipeList = () => {
-      const datas = [1, 2, 3, 4, 5, 67, 8, 9, 0];
+      //context hook
+      const { recipes } = useContext(RecipeContext);
 
       return (
-                <ul className= {`${styles.recipes__list}`}>
-                        {datas.map((x,i) => (
-                              <RecipeItem key={i}  />
-                        ))}
-                  </ul>
+            <ul className={`${styles.recipes__list}`}>
+                  {recipes.map((recipe, i) => (
+                        <RecipeItem key={recipe.id} recipe={recipe} />
+                  ))}
+            </ul>
       );
 };
