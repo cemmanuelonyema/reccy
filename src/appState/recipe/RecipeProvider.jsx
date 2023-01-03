@@ -1,6 +1,10 @@
 import React, { useReducer, createContext } from 'react';
 import axios from 'axios';
-import { GET_RECIPE, GET_SEARCH_RECIPE, RECIPE_ERROR } from '../actionTypes';
+import {
+      GET_RECIPE,
+      GET_SEARCH_RECIPE,
+     SET_CURRENT_PAGE
+} from '../actionTypes';
 import { recipeReducer } from './recipeReducer';
 export const RecipeContext = createContext();
 
@@ -21,7 +25,6 @@ export const RecipeProvider = ({ children }) => {
             try {
                   const url = `${baseUrl}/?search=${query}`;
                   const res = await axios.get(url);
-                  console.log(res.data.data.recipes);
                   dispatch({
                         type: GET_SEARCH_RECIPE,
                         payload: res.data.data.recipes,
@@ -39,7 +42,6 @@ export const RecipeProvider = ({ children }) => {
             try {
                   const url = `${baseUrl}/${id}`;
                   const res = await axios.get(url);
-                  console.log(res);
                   dispatch({
                         type: GET_RECIPE,
                         payload: res.data.data.recipe,
@@ -50,6 +52,12 @@ export const RecipeProvider = ({ children }) => {
                         payload: err.message,
                   });
             }
+      };
+      const setCurrentPage = (pageNo) => {
+            dispatch({
+                  type: SET_CURRENT_PAGE,
+                  payload: pageNo
+            });
       };
 
       return (
@@ -62,6 +70,7 @@ export const RecipeProvider = ({ children }) => {
                         itemsPerPage: state.itemsPerPage,
                         getSearchRecipes,
                         getRecipe,
+                      setCurrentPage
                   }}
             >
                   {children}

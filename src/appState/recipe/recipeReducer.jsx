@@ -1,4 +1,7 @@
-import { GET_RECIPE, GET_SEARCH_RECIPE } from '../actionTypes';
+import {
+      GET_RECIPE,
+      GET_SEARCH_RECIPE,
+SET_CURRENT_PAGE} from '../actionTypes';
 
 export const recipeReducer = (state, action) => {
       switch (action.type) {
@@ -14,5 +17,11 @@ export const recipeReducer = (state, action) => {
                         recipe: action.payload,
                         loading: false,
                   };
+            case SET_CURRENT_PAGE:
+                  return {
+                        ...state,
+                        currentPage: action.payload,
+                  };
+          
       }
 };
