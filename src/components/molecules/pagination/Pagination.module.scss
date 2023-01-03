@@ -1,0 +1,13 @@
+.pagination {
+      display: flex;
+      gap: 2.4rem;
+      margin: 0 auto;
+      width: fit-content;
+      padding: 3.2rem 1.2rem;
+
+      &__btn {
+            border: 1px solid black;
+            padding: 1.2rem;
+            cursor: pointer;
+      }
+}
