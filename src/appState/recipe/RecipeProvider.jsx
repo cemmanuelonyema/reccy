@@ -3,7 +3,7 @@ import axios from 'axios';
 import {
       GET_RECIPE,
       GET_SEARCH_RECIPE,
-     SET_CURRENT_PAGE
+      SET_CURRENT_PAGE,
 } from '../actionTypes';
 import { recipeReducer } from './recipeReducer';
 export const RecipeContext = createContext();
@@ -56,7 +56,7 @@ export const RecipeProvider = ({ children }) => {
       const setCurrentPage = (pageNo) => {
             dispatch({
                   type: SET_CURRENT_PAGE,
-                  payload: pageNo
+                  payload: pageNo,
             });
       };
 
@@ -70,7 +70,7 @@ export const RecipeProvider = ({ children }) => {
                         itemsPerPage: state.itemsPerPage,
                         getSearchRecipes,
                         getRecipe,
-                      setCurrentPage
+                        setCurrentPage,
                   }}
             >
                   {children}

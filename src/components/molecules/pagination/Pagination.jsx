@@ -3,7 +3,8 @@ import { RecipeContext } from '../../../appState/recipe/RecipeProvider';
 import styles from './Pagination.module.scss';
 
 export const Pagination = () => {
-      const { currentPage, recipes, itemsPerPage, setCurrentPage } = useContext(RecipeContext);
+      const { currentPage, recipes, itemsPerPage, setCurrentPage } =
+            useContext(RecipeContext);
       let pages = [];
       const totalPosts = recipes.length;
 
@@ -11,17 +12,14 @@ export const Pagination = () => {
             pages.push(i);
       }
 
-
-
       return (
             <div className={styles.pagination}>
-              
                   {pages.map((page, index) => {
                         return (
                               <button
                                     key={index}
                                     className={styles.pagination__btn}
-                                      onClick={()=>setCurrentPage(page)}
+                                    onClick={() => setCurrentPage(page)}
                               >
                                     {page}
                               </button>
