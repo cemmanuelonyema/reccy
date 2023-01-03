@@ -111,6 +111,7 @@ export const RecipeDetail = () => {
                                     <a
                                           href={recipe?.source_url}
                                           target="_blank"
+                                          rel="nofollow noopener noreferrer"
                                     >
                                           <span>Directions</span>
                                           <svg>
