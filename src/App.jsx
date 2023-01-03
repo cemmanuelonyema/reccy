@@ -1,9 +1,12 @@
+import { RecipeProvider } from './appState/recipe/RecipeProvider';
 import { Index } from './components/pages/Index';
 
 export const App = () => {
       return (
             <>
-                  <Index />
+                  <RecipeProvider>
+                        <Index />
+                  </RecipeProvider>
             </>
       );
 };

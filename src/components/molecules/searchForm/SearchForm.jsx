@@ -1,8 +1,12 @@
-import React, { useState, useEffect, Fragment } from 'react';
+import React, { useState, useEffect, Fragment, useContext } from 'react';
+import { RecipeContext } from '../../../appState/recipe/RecipeProvider';
 import styles from './SearchForm.module.scss';
 
 export const SearchForm = () => {
-      //hooks
+      //context hook
+      const { getSearchRecipes } = useContext(RecipeContext);
+
+      //state hooks
       const [query, setQuery] = useState('');
 
       //methods
@@ -17,6 +21,7 @@ export const SearchForm = () => {
             console.log(query);
       };
 
+      //useEffect
       useEffect(() => {
             const timeoutId = setTimeout(() => {
                   if (query) getSearchRecipes(query);
