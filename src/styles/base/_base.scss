@@ -1,35 +1,35 @@
-
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
+      box-sizing: inherit;
+      margin: 0;
+      padding: 0;
 }
 
 html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  scroll-behavior: smooth;
+      box-sizing: border-box;
+      font-size: 62.5%;
+      scroll-behavior: smooth;
 }
 
 button,
 input {
-  background: none;
-  border: none;
+      background: none;
+      border: none;
 }
 
 li {
-  list-style: none;
+      list-style: none;
 }
 
-img{
-     width: 100%;
-    height: 100%;
+img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
 }
 // class elements
-.container{
-    max-width: 100rem;
-    padding: 3.2rem;
-    margin: 0 auto;
+.container {
+      max-width: 100rem;
+      padding: 3.2rem;
+      margin: 0 auto;
 }
