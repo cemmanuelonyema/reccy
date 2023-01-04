@@ -3,6 +3,8 @@ import axios from 'axios';
 import {
       GET_RECIPE,
       GET_SEARCH_RECIPE,
+      NEXT_PAGE,
+      PREVIOUS_PAGE,
       SET_CURRENT_PAGE,
 } from '../actionTypes';
 import { recipeReducer } from './recipeReducer';
@@ -10,7 +12,15 @@ export const RecipeContext = createContext();
 
 export const RecipeProvider = ({ children }) => {
       const initialState = {
-            recipes: [],
+            // recipes: [],
+            recipes: [
+                  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 11, 1, 1, 1, 1, 1,
+                  1, 1, 1, 1, 1, 1, 11, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                  1, 11, 1, 1, 1, 1, 1, 11, 1, 1, 1, 11, 1, 1, 1, 1, 1, 11, 11,
+                  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 11, 1, 1, 1, 1, 1, 1,
+                  1, 1, 1, 1, 1, 11, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                  11, 1, 1, 1, 1, 1, 11, 1, 1, 1, 11, 1, 1, 1, 1, 1, 11, 1,
+            ],
             recipe: {},
             loading: true,
             currentPage: 1,
@@ -59,6 +69,16 @@ export const RecipeProvider = ({ children }) => {
                   payload: pageNo,
             });
       };
+      const prevPage = () => {
+            dispatch({
+                  type: PREVIOUS_PAGE,
+            });
+      };
+      const nextPage = () => {
+            dispatch({
+                  type: NEXT_PAGE,
+            });
+      };
 
       return (
             <RecipeContext.Provider
@@ -71,6 +91,8 @@ export const RecipeProvider = ({ children }) => {
                         getSearchRecipes,
                         getRecipe,
                         setCurrentPage,
+                        prevPage,
+                        nextPage,
                   }}
             >
                   {children}
