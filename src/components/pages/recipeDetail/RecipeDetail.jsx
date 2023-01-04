@@ -31,72 +31,88 @@ export const RecipeDetail = () => {
                         </figure>
 
                         <div class={styles.recipeDetail__details}>
-                             <div class={styles.recipeDetail__info}>
-                                 
-                                   <span class={`${styles.recipeDetail__infoData} ${styles.recipeDetail__infoDataMinutes}`} >
-                                         45
-                                   </span>
-                                   <span class={styles.recipeDetail__infoText}>
-                                         minutes
-                                   </span>
-                             </div>
-                             <div class={styles.recipeDetail__info}>
-                                   
-                                   <span class= {`${styles.recipeDetail__infoData} ${styles.recipeDetail__infoDataPeople}`}>
-                                         4
-                                   </span>
-                                   <span class={styles.recipeDetail__infoText}>
-                                         servings
-                                   </span>
+                              <div class={styles.recipeDetail__info}>
+                                    <span
+                                          class={`${styles.recipeDetail__infoData} ${styles.recipeDetail__infoDataMinutes}`}
+                                    >
+                                          45
+                                    </span>
+                                    <span class={styles.recipeDetail__infoText}>
+                                          minutes
+                                    </span>
+                              </div>
+                              <div class={styles.recipeDetail__info}>
+                                    <span
+                                          class={`${styles.recipeDetail__infoData} ${styles.recipeDetail__infoDataPeople}`}
+                                    >
+                                          4
+                                    </span>
+                                    <span class={styles.recipeDetail__infoText}>
+                                          servings
+                                    </span>
 
-                                   <div class={styles.recipeDetail__infoButtons}>
-                                         <button class="btn--tiny btn--increase-servings">
-                                              
-                                         </button>
-                                         <button class="btn--tiny btn--increase-servings">
-                                              
-                                         </button>
-                                   </div>
-                             </div>
+                                    <div
+                                          class={
+                                                styles.recipeDetail__infoButtons
+                                          }
+                                    >
+                                          <button class="btn--tiny btn--increase-servings"></button>
+                                          <button class="btn--tiny btn--increase-servings"></button>
+                                    </div>
+                              </div>
 
-                       <div class="recipe__user-generated">
-                             <span>icon</span>
-                       </div>
-                       <button class="btn--round">
-                              <span>icon</span>
-                       </button>
-                       </div>
-            
-                    <div class={styles.recipeDetail__ingredients}>
-                          <h2 class="heading--2">Recipe ingredients</h2>
-                          <ul class={styles.recipeDetail__ingredientList}>
-                                <li class={styles.recipeDetail__ingredient}>
-                                     
-                                      <div class={styles.recipeDetail__quantity}>
-                                            1000
-                                      </div>
-                                      <div class={styles.recipeDetail__description}>
-                                            <span class="recipeDetail__unit">
-                                                  g
-                                            </span>
-                                            pasta
-                                      </div>
-                                </li>
+                              <div class="recipe__user-generated">
+                                    <span>icon</span>
+                              </div>
+                              <button class="btn--round">
+                                    <span>icon</span>
+                              </button>
+                        </div>
 
-                                <li class={styles.recipeDetail__ingredient}>
-                                     
-                                      <div class={styles.recipeDetail__quantity}>
-                                            0.5
-                                      </div>
-                                      <div class={styles.recipeDetail__description}>
-                                            <span class="recipe__unit">
-                                                  cup
-                                            </span>
-                                            ricotta cheese
-                                      </div>
-                                </li>
-                          </ul>
-                    </div>
+                        <div class={styles.recipeDetail__ingredients}>
+                              <h2 class="heading--2">Recipe ingredients</h2>
+                              <ul class={styles.recipeDetail__ingredientList}>
+                                    <li class={styles.recipeDetail__ingredient}>
+                                          <div
+                                                class={
+                                                      styles.recipeDetail__quantity
+                                                }
+                                          >
+                                                1000
+                                          </div>
+                                          <div
+                                                class={
+                                                      styles.recipeDetail__description
+                                                }
+                                          >
+                                                <span class="recipeDetail__unit">
+                                                      g
+                                                </span>
+                                                pasta
+                                          </div>
+                                    </li>
+
+                                    <li class={styles.recipeDetail__ingredient}>
+                                          <div
+                                                class={
+                                                      styles.recipeDetail__quantity
+                                                }
+                                          >
+                                                0.5
+                                          </div>
+                                          <div
+                                                class={
+                                                      styles.recipeDetail__description
+                                                }
+                                          >
+                                                <span class="recipe__unit">
+                                                      cup
+                                                </span>
+                                                ricotta cheese
+                                          </div>
+                                    </li>
+                              </ul>
+                        </div>
                         <div class={styles.recipeDetail__directions}>
                               <h2 class="heading--2">How to cook it</h2>
                               <p class={styles.recipeDetail__directionsText}>
@@ -120,97 +136,3 @@ export const RecipeDetail = () => {
             </section>
       );
 };
-
-{
-      /* <div className={styles.recipeDetail__content}>
-                              <div className={styles.recipeDetail__ingredients}>
-                                    <h2 className={styles.ingredient__title}>
-                                          Recipe ingredients
-                                    </h2>
-                                    <ul className={styles.ingredient__list}>
-                                          <li
-                                                className={
-                                                      styles.ingredient__item
-                                                }
-                                          >
-                                                <svg
-                                                      className={
-                                                            styles.ingredient__icon
-                                                      }
-                                                >
-                                                      <use href="src/img/icons.svg#icon-check"></use>
-                                                </svg>
-                                                <div
-                                                      className={
-                                                            styles.ingredient__quantity
-                                                      }
-                                                >
-                                                      1000
-                                                </div>
-                                                <div
-                                                      className={
-                                                            styles.ingredient__description
-                                                      }
-                                                >
-                                                      <span
-                                                            className={
-                                                                  styles.ingredient__unit
-                                                            }
-                                                      >
-                                                            g
-                                                      </span>
-                                                      pasta
-                                                </div>
-                                          </li>
-
-                                          <li
-                                                className={
-                                                      styles.ingredient__item
-                                                }
-                                          >
-                                                <svg className="recipe__icon">
-                                                      <use href="src/img/icons.svg#icon-check"></use>
-                                                </svg>
-                                                <div className="recipe__quantity">
-                                                      0.5
-                                                </div>
-                                                <div className="recipe__description">
-                                                      <span className="recipe__unit">
-                                                            cup
-                                                      </span>
-                                                      ricotta cheese
-                                                </div>
-                                          </li>
-                                    </ul>
-                              </div>
-
-                              <div className={styles.recipeDetail__direction}>
-                                    <h3 className={styles.direction__tilte}>
-                                          How to cook it
-                                    </h3>
-                                    <p className={styles.direction__text}>
-                                          This recipe was carefully designed and
-                                          tested by
-                                          <span
-                                                className={
-                                                      styles.directionText__highlight
-                                                }
-                                          >
-                                                {recipe?.publisher}.
-                                          </span>
-                                          Please check out directions at their
-                                          website.
-                                    </p>
-                                    <a
-                                          href={recipe?.source_url}
-                                          target="_blank"
-                                          rel="nofollow noopener noreferrer"
-                                    >
-                                          <span>Directions</span>
-                                          <svg>
-                                                <use href="src/img/icons.svg#icon-arrow-right"></use>
-                                          </svg>
-                                    </a>
-                              </div>
-                        </div> */
-}
