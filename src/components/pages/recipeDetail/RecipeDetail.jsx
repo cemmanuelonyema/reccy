@@ -7,6 +7,7 @@ import styles from './RecipeDetail.module.scss';
 export const RecipeDetail = () => {
       //hooks
       const { getRecipe, recipe } = useContext(RecipeContext);
+      console.log(recipe);
       const { id } = useParams();
       //useEffect
       useEffect(() => {
@@ -14,14 +15,14 @@ export const RecipeDetail = () => {
       }, [id]);
 
       return (
-             <section className={styles.recipeDetail}>
+            <section className={styles.recipeDetail}>
                   <div
                         className={`${styles.recipeDetail__container} container`}
                   >
                         <figure class={styles.recipeDetail__fig}>
                               <img
-                                    // src={recipe?.image_url}
-                                    src="/public/2.jpg"
+                                    src={recipe?.image_url}
+                                    // src="/public/2.jpg"
                                     alt={recipe?.title}
                                     className={styles.recipeDetail__img}
                               />
