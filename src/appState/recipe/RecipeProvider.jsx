@@ -63,12 +63,6 @@ export const RecipeProvider = ({ children }) => {
                   });
             }
       };
-      const setCurrentPage = (pageNo) => {
-            dispatch({
-                  type: SET_CURRENT_PAGE,
-                  payload: pageNo,
-            });
-      };
       const prevPage = () => {
             dispatch({
                   type: PREVIOUS_PAGE,
@@ -90,7 +84,6 @@ export const RecipeProvider = ({ children }) => {
                         itemsPerPage: state.itemsPerPage,
                         getSearchRecipes,
                         getRecipe,
-                        setCurrentPage,
                         prevPage,
                         nextPage,
                   }}

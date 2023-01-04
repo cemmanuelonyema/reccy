@@ -3,7 +3,6 @@ import {
       GET_SEARCH_RECIPE,
       NEXT_PAGE,
       PREVIOUS_PAGE,
-      SET_CURRENT_PAGE,
 } from '../actionTypes';
 
 export const recipeReducer = (state, action) => {
@@ -19,11 +18,6 @@ export const recipeReducer = (state, action) => {
                         ...state,
                         recipe: action.payload,
                         loading: false,
-                  };
-            case SET_CURRENT_PAGE:
-                  return {
-                        ...state,
-                        currentPage: action.payload,
                   };
             case PREVIOUS_PAGE:
                   return {
