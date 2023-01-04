@@ -14,7 +14,7 @@ export const RecipeDetail = () => {
       }, [id]);
 
       return (
-            <section className={styles.recipeDetail}>
+             <section className={styles.recipeDetail}>
                   <div
                         className={`${styles.recipeDetail__container} container`}
                   >
