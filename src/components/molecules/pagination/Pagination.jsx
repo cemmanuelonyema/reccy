@@ -27,7 +27,7 @@ export const Pagination = () => {
                   </button>
             ) : //other pages
             currentPage < numOfPages ? (
-                  <div className = {styles.pagination__btns}>
+                  <div className={styles.pagination__btns}>
                         <button
                               className={styles.pagination__btn}
                               onClick={() => prevPage()}
