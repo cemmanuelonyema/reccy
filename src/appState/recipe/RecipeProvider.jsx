@@ -5,22 +5,13 @@ import {
       GET_SEARCH_RECIPE,
       NEXT_PAGE,
       PREVIOUS_PAGE,
-      SET_CURRENT_PAGE,
 } from '../actionTypes';
 import { recipeReducer } from './recipeReducer';
 export const RecipeContext = createContext();
 
 export const RecipeProvider = ({ children }) => {
       const initialState = {
-            // recipes: [],
-            recipes: [
-                  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 11, 1, 1, 1, 1, 1,
-                  1, 1, 1, 1, 1, 1, 11, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-                  1, 11, 1, 1, 1, 1, 1, 11, 1, 1, 1, 11, 1, 1, 1, 1, 1, 11, 11,
-                  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 11, 1, 1, 1, 1, 1, 1,
-                  1, 1, 1, 1, 1, 11, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-                  11, 1, 1, 1, 1, 1, 11, 1, 1, 1, 11, 1, 1, 1, 1, 1, 11, 1,
-            ],
+            recipes: [],
             recipe: {},
             loading: true,
             currentPage: 1,

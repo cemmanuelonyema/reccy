@@ -13,9 +13,8 @@ export const RecipeList = () => {
 
       return (
             <ul className={`${styles.recipes__list}`}>
-                  {currentItems.map((recipe, i) => (
-                        // <RecipeItem key={recipe.id} recipe={recipe} />
-                        <RecipeItem key={i} />
+                  {currentItems.map((recipe) => (
+                        <RecipeItem key={recipe.id} recipe={recipe} />
                   ))}
             </ul>
       );
