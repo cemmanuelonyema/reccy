@@ -22,12 +22,11 @@ export const RecipeDetail = () => {
                         <figure class={styles.recipeDetail__fig}>
                               <img
                                     src={recipe?.image_url}
-                                    // src="/public/2.jpg"
                                     alt={recipe?.title}
                                     className={styles.recipeDetail__img}
                               />
                               <h1 className={styles.recipeDetail__title}>
-                                    <span>Pasta with tomato cream sauce</span>
+                                    <span>{recipe?.title}</span>
                               </h1>
                         </figure>
 
@@ -36,7 +35,7 @@ export const RecipeDetail = () => {
                                     <span
                                           class={`${styles.recipeDetail__infoData} ${styles.recipeDetail__infoDataMinutes}`}
                                     >
-                                          45
+                                          {recipe.cooking_time}
                                     </span>
                                     <span class={styles.recipeDetail__infoText}>
                                           minutes
@@ -46,7 +45,7 @@ export const RecipeDetail = () => {
                                     <span
                                           class={`${styles.recipeDetail__infoData} ${styles.recipeDetail__infoDataPeople}`}
                                     >
-                                          4
+                                          {recipe.servings}
                                     </span>
                                     <span class={styles.recipeDetail__infoText}>
                                           servings
@@ -112,6 +111,32 @@ export const RecipeDetail = () => {
                                                 ricotta cheese
                                           </div>
                                     </li>
+
+                                    {recipe?.ingredients?.map((item) => (
+                                          <li
+                                                class={
+                                                      styles.recipeDetail__ingredient
+                                                }
+                                          >
+                                                <div
+                                                      class={
+                                                            styles.recipeDetail__quantity
+                                                      }
+                                                >
+                                                      {item.quantity}
+                                                </div>
+                                                <div
+                                                      class={
+                                                            styles.recipeDetail__description
+                                                      }
+                                                >
+                                                      <span class="recipe__unit">
+                                                            {item.unit}
+                                                      </span>
+                                                      {item.description}
+                                                </div>
+                                          </li>
+                                    ))}
                               </ul>
                         </div>
                         <div class={styles.recipeDetail__directions}>
@@ -120,14 +145,14 @@ export const RecipeDetail = () => {
                                     This recipe was carefully designed and
                                     tested by
                                     <span class="recipeDetail__publisher">
-                                          The Pioneer Woman
+                                          {recipe?.publisher}
                                     </span>
                                     . Please check out directions at their
                                     website.
                               </p>
                               <a
                                     class="btn--small recipe__btn"
-                                    href="http://thepioneerwoman.com/cooking/pasta-with-tomato-cream-sauce/"
+                                    href={recipe?.source_url}
                                     target="_blank"
                               >
                                     <span>Directions</span>
