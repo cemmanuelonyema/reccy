@@ -1,5 +1,6 @@
 import React, { useState, useEffect, Fragment, useContext } from 'react';
 import { RecipeContext } from '../../../appState/recipe/RecipeProvider';
+import { Icon } from '../../atoms/icon/Icon';
 import styles from './SearchForm.module.scss';
 
 export const SearchForm = () => {
@@ -42,9 +43,10 @@ export const SearchForm = () => {
                               onChange={handleChange}
                               value={query}
                         />
-                        <span className={styles.form__clear}>
+                        {/* <span className={styles.form__clear}>
                               <i>X</i>
-                        </span>
+                        </span> */}
+                        <Icon iconName="check" />
                   </form>
             </Fragment>
       );
