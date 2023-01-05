@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { RecipeContext } from '../../../appState/recipe/RecipeProvider';
+import { Icon } from '../../atoms/icon/Icon';
 //style
 import styles from './RecipeDetail.module.scss';
 
@@ -32,6 +33,7 @@ export const RecipeDetail = () => {
 
                         <div class={styles.recipeDetail__details}>
                               <div class={styles.recipeDetail__info}>
+                                    <Icon iconName="clock" />
                                     <span
                                           class={`${styles.recipeDetail__infoData} ${styles.recipeDetail__infoDataMinutes}`}
                                     >
@@ -42,6 +44,8 @@ export const RecipeDetail = () => {
                                     </span>
                               </div>
                               <div class={styles.recipeDetail__info}>
+                                    <Icon iconName="users" />
+
                                     <span
                                           class={`${styles.recipeDetail__infoData} ${styles.recipeDetail__infoDataPeople}`}
                                     >
@@ -56,16 +60,22 @@ export const RecipeDetail = () => {
                                                 styles.recipeDetail__infoButtons
                                           }
                                     >
-                                          <button class="btn--tiny btn--increase-servings"></button>
-                                          <button class="btn--tiny btn--increase-servings"></button>
+                                          <button class="btn--tiny btn--increase-servings">
+                                                <Icon iconName="minus-circle" />
+                                          </button>
+                                          <button class="btn--tiny btn--increase-servings">
+                                                <Icon iconName="plus-circle" />
+                                          </button>
                                     </div>
                               </div>
 
                               <div class="recipe__user-generated">
-                                    <span>icon</span>
+                                    <button class="btn--round">
+                                          <Icon iconName="user" />
+                                    </button>
                               </div>
                               <button class="btn--round">
-                                    <span>icon</span>
+                                    <Icon iconName="bookmark-fill" />
                               </button>
                         </div>
 
@@ -73,6 +83,8 @@ export const RecipeDetail = () => {
                               <h2 class="heading--2">Recipe ingredients</h2>
                               <ul class={styles.recipeDetail__ingredientList}>
                                     <li class={styles.recipeDetail__ingredient}>
+                                          <Icon iconName="check" />
+
                                           <div
                                                 class={
                                                       styles.recipeDetail__quantity
@@ -93,6 +105,8 @@ export const RecipeDetail = () => {
                                     </li>
 
                                     <li class={styles.recipeDetail__ingredient}>
+                                          <Icon iconName="check" />
+
                                           <div
                                                 class={
                                                       styles.recipeDetail__quantity
@@ -118,6 +132,8 @@ export const RecipeDetail = () => {
                                                       styles.recipeDetail__ingredient
                                                 }
                                           >
+                                                <Icon iconName="check" />
+
                                                 <div
                                                       class={
                                                             styles.recipeDetail__quantity
@@ -156,6 +172,7 @@ export const RecipeDetail = () => {
                                     target="_blank"
                               >
                                     <span>Directions</span>
+                                    <Icon iconName="arrow-right" />
                               </a>
                         </div>
                   </div>

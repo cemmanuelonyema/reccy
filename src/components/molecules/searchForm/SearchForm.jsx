@@ -36,6 +36,8 @@ export const SearchForm = () => {
       return (
             <Fragment>
                   <form className={styles.form} onSubmit={handleSubmit}>
+                        <Icon iconName="search" />
+
                         <input
                               className={styles.form__field}
                               type="text"
@@ -43,10 +45,8 @@ export const SearchForm = () => {
                               onChange={handleChange}
                               value={query}
                         />
-                        {/* <span className={styles.form__clear}>
-                              <i>X</i>
-                        </span> */}
-                        <Icon iconName="check" />
+
+                        <Icon iconName="minus-circle" />
                   </form>
             </Fragment>
       );

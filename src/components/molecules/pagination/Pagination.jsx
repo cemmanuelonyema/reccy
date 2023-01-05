@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { RecipeContext } from '../../../appState/recipe/RecipeProvider';
+import { Icon } from '../../atoms/icon/Icon';
 import styles from './Pagination.module.scss';
 
 export const Pagination = () => {
@@ -15,7 +16,10 @@ export const Pagination = () => {
                         className={styles.pagination__btn}
                         onClick={() => nextPage()}
                   >
-                        <span>{`Page ${currentPage + 1}`}</span>
+                        <span>
+                              {`Page ${currentPage + 1}`}
+                              <Icon iconName="arrow-right" />
+                        </span>
                   </button>
             ) : //last page
             currentPage === numOfPages && numOfPages > 1 ? (
@@ -23,7 +27,10 @@ export const Pagination = () => {
                         className={styles.pagination__btn}
                         onClick={() => prevPage()}
                   >
-                        <span>{`Page ${currentPage - 1}`}</span>
+                        <span>
+                              {`Page ${currentPage - 1}`}
+                              <Icon iconName="arrow-left" />
+                        </span>
                   </button>
             ) : //other pages
             currentPage < numOfPages ? (
