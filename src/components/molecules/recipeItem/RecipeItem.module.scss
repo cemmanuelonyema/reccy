@@ -1,12 +1,17 @@
 .recipe {
-  border: 1px solid black;
+   display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    overflow: hidden;
+    background-color: var(--white);
+    box-shadow: 0 1rem 5rem rgba(36, 106, 60, 0.15);
+    cursor: pointer;
 
   &__content {
-    padding: 1.2rem 2.4rem;
+    padding: 1.6rem 3.2rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    border: 1px solid black;
   }
 
   &__imgBox{
@@ -16,5 +21,23 @@
   &__img{
     display: block;
     object-fit: cover;
+  }
+  &__title{
+    font-size: 2rem;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 1.8;
+  }
+  &__publisher{
+    display: inline-block;
+    background-color: var(--color-primary-light);
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    color: var(--color-white-lightest);
+    padding: 0.4rem 0.8rem;
+    margin-bottom: 1.2rem;
   }
 }
