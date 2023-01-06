@@ -2,6 +2,8 @@ import React, { useContext, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { RecipeContext } from '../../../appState/recipe/RecipeProvider';
 import { Icon } from '../../atoms/icon/Icon';
+import { Footer } from '../../shared/footer/Footer';
+
 //style
 import styles from './RecipeDetail.module.scss';
 
@@ -176,6 +178,7 @@ export const RecipeDetail = () => {
                               </a>
                         </div>
                   </div>
+                  <Footer/>
             </section>
       );
 };
