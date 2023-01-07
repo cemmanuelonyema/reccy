@@ -178,7 +178,7 @@ export const RecipeDetail = () => {
                               </a>
                         </div>
                   </div>
-                  <Footer/>
+                  <Footer />
             </section>
       );
 };
