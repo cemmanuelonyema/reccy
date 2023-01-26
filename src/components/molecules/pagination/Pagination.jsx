@@ -16,7 +16,7 @@ export const Pagination = () => {
                         className={styles.pagination__btn}
                         onClick={() => nextPage()}
                   >
-                        <span>
+                        <span className={styles.btnContent}>
                               {`Page ${currentPage + 1}`}
                               <Icon iconName="arrow-right" />
                         </span>
@@ -27,9 +27,9 @@ export const Pagination = () => {
                         className={styles.pagination__btn}
                         onClick={() => prevPage()}
                   >
-                        <span>
-                              {`Page ${currentPage - 1}`}
+                        <span className={styles.btnContent}>
                               <Icon iconName="arrow-left" />
+                              {`Page ${currentPage - 1}`}
                         </span>
                   </button>
             ) : //other pages
@@ -39,13 +39,20 @@ export const Pagination = () => {
                               className={styles.pagination__btn}
                               onClick={() => prevPage()}
                         >
-                              <span>{`Page ${currentPage - 1}`}</span>
+                              <span className={styles.btnContent}>
+                                    <Icon iconName="arrow-left" />
+                                    {`Page ${currentPage - 1}`}{' '}
+                              </span>
                         </button>
                         <button
                               className={styles.pagination__btn}
                               onClick={() => nextPage()}
                         >
-                              <span>{`Page ${currentPage + 1}`}</span>
+                              <span className={styles.btnContent}>
+                                    {' '}
+                                    {`Page ${currentPage + 1}`}{' '}
+                                    <Icon iconName="arrow-right" />
+                              </span>
                         </button>
                   </div>
             ) : (

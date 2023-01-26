@@ -7,11 +7,23 @@
 
       &__btn {
             border: 1px solid black;
-            padding: 1.2rem;
+            padding: 1.2rem 1.8rem;
+            border-radius: 2rem;
             cursor: pointer;
+            background-color: black;
+            color: white;
+
+           
       }
+
       &__btns {
-display: flex;
-gap: 2.4rem;
+            display: flex;
+            gap: 2.4rem;
+      }
+
+      .btnContent{
+ display: flex;
+            align-items: center;
+            gap: 1.2rem;
       }
 }
