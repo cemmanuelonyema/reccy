@@ -1,5 +1,8 @@
-.recipes{
-    &__container{
+.recipes {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
 
-    }
+      &__container {
+      }
 }
