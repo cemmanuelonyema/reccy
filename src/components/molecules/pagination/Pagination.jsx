@@ -53,7 +53,7 @@ export const Pagination = () => {
                                     {`Page ${currentPage + 1}`}{' '}
                                     <Icon iconName="arrow-right" />
                               </span>
-                         </button>
+                        </button>
                   </div>
             ) : (
                   //only one page- render nothing
