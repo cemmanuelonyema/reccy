@@ -1,5 +1,6 @@
 import {} from 'react';
 import styles from './Nav.module.scss';
+import { FaPlus, FaBookmark } from '../../../assets/index';
 
 const Nav = () => {
       return (
@@ -7,7 +8,7 @@ const Nav = () => {
                   <ul className={styles.navList}>
                         <li>
                               <button className={styles.toolBtn}>
-                                    <span>+</span>
+                                    <FaPlus />
                                     <span className={styles.toolText}>
                                           Add recipe
                                     </span>
@@ -15,7 +16,7 @@ const Nav = () => {
                         </li>
                         <li>
                               <button className={styles.toolBtn}>
-                                    <span>B</span>
+                                    <FaBookmark />
                                     <span className={styles.toolText}>
                                           Bookmark
                                     </span>
