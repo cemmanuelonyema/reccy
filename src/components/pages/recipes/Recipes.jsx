@@ -11,7 +11,6 @@ export const Recipes = () => {
             <section className={styles.recipes}>
                   <Header />
                   <div className={`${styles.recipes__container} container`}>
-                        <SearchForm />
                         <RecipeList />
                         <Pagination />
                   </div>

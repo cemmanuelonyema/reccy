@@ -1,10 +1,17 @@
 .header {
       background-color: rgb(230, 223, 223);
 
+      &_logo {
+            height: 3.25rem;
+            img {
+                  height: 100%;
+            }
+      }
+
       &__container {
+            padding: 2.4rem 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 2.4rem 0;
       }
 }
