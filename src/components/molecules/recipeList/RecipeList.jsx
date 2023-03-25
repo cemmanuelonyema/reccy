@@ -12,7 +12,7 @@ export const RecipeList = () => {
       const currentItems = recipes.slice(indexOfFirstPage, indexOfLastPage);
 
       return (
-            <ul className={`${styles.recipes__list}`}>
+            <ul className={styles.recipes__list}>
                   {currentItems.map((recipe) => (
                         <RecipeItem key={recipe.id} recipe={recipe} />
                   ))}
