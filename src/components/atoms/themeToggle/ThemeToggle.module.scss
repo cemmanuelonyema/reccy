@@ -1,0 +1,64 @@
+.toggleInput {
+      display: none;
+}
+
+.toggleLabel {
+      cursor: pointer;
+      width: 5.4rem;
+      height: 2.8rem;
+      background: black;
+      border: 2px solid white;
+      display: block;
+      border-radius: 10rem;
+      position: relative;
+      transition: 0.9s;
+}
+
+.toggleLabel::after {
+      content: '';
+      position: absolute;
+      top: 0.25rem;
+      left: 0.4rem;
+      width: 1.8rem;
+      height: 1.8rem;
+      background: #fff;
+      border-radius: 10rem;
+      transition: 0.9s;
+}
+
+.toggleInput:checked + .toggleLabel {
+      background: white;
+      transition: 0.9s;
+}
+.toggleInput:checked + .toggleLabel:after {
+      left: calc(100% - 5px);
+      transform: translateX(-100%);
+      background: black;
+      width: 1.9rem;
+      height: 1.9rem;
+      transition: 0.9s;
+}
+.toggleLabel:active:after {
+      width: 9rem;
+      transition: 0.9s;
+}
+
+/* width 600px */
+@media (max-width: 37.5em) {
+      .toggleLabel::after {
+            top: 4.2px;
+            left: 4px;
+            width: 2.5rem;
+            height: 2.5rem;
+      }
+
+      .toggleLabel {
+            width: 7rem;
+            height: 3.5rem;
+      }
+      .toggleLabel::after {
+            top: 0.65rem;
+            width: 1.8rem;
+            height: 1.8rem;
+      }
+}

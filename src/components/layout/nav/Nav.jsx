@@ -1,6 +1,7 @@
 import {} from 'react';
 import styles from './Nav.module.scss';
 import { FaPlus, FaBookmark } from '../../../assets/index';
+import { ThemeToggle } from '../../atoms/themeToggle/ThemeToggle';
 
 const Nav = () => {
       return (
@@ -22,9 +23,7 @@ const Nav = () => {
                                     </span>
                               </button>
                         </li>
-                        <li>
-                              <button>Mood</button>
-                        </li>
+                        <ThemeToggle />
                   </ul>
             </nav>
       );
