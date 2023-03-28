@@ -16,12 +16,13 @@ export const RecipeItem = ({ recipe }) => {
                               />
                         </div>
                         <div className={styles.recipe__content}>
-                              <span className={styles.recipe__title}>
-                                    {recipe?.title}
-                              </span>
                               <span className={styles.recipe__publisher}>
-                                    Publisher: {recipe?.publisher}
+                                    {recipe?.publisher}
                               </span>
+                              <h2 className={styles.recipe__title}>
+                                    {recipe?.title}
+                              </h2>
+                              <span className={styles.detailsLink}>See details &gt; </span>
                         </div>
                   </Link>
             </li>

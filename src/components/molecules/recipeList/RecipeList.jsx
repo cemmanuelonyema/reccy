@@ -12,10 +12,15 @@ export const RecipeList = () => {
       const currentItems = recipes.slice(indexOfFirstPage, indexOfLastPage);
 
       return (
-            <ul className={styles.recipes__list}>
-                  {currentItems.map((recipe) => (
-                        <RecipeItem key={recipe.id} recipe={recipe} />
-                  ))}
-            </ul>
+            <section className={styles.recipes_section}>
+                  <div className={styles.results}>
+                        {recipes.length} Results found
+                  </div>
+                  <ul className={styles.recipes__list}>
+                        {currentItems.map((recipe) => (
+                              <RecipeItem key={recipe.id} recipe={recipe} />
+                        ))}
+                  </ul>
+            </section>
       );
 };
