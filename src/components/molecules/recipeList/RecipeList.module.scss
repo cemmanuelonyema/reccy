@@ -1,8 +1,18 @@
 @import '../../../styles/abstract/mixins.scss';
 
+.recipes_section {
+      padding: 3rem 0;
+
+      .results {
+            font-weight: 700;
+            font-size: 1.8rem;
+      }
+}
+
 .recipes__list {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+      padding: 3rem 0;
       //   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 
       gap: 3.2rem;
