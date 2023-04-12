@@ -7,7 +7,8 @@ export const Footer = () => {
             <footer className={styles.footer}>
                   <div className={styles.footer__container}>
                         <span>
-                              {date.getFullYear()} Reccy - Developed by
+                              &copy; {date.getFullYear()} Reccy - Developed by
+                              &nbsp;
                               <a
                                     href="https://ceo-ox.vecel.app"
                                     target="_blank"
