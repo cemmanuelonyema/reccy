@@ -10,6 +10,7 @@ import Features from './components/features/Features';
 import Pricing from './components/pricing/Pricing';
 import Contact from './components/contact/Contact';
 import Steps from './components/steps/Steps';
+import Footer from './components/footer/Footer';
 
 const Landing = () => {
       return (
@@ -23,6 +24,7 @@ const Landing = () => {
                   <Gallery />
                   <Pricing />
                   <Contact />
+                  <Footer />
             </>
       );
 };

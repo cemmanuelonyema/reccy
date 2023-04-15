@@ -1,0 +1,7 @@
+.footer {
+      &__container {
+            display: grid;
+            grid-template-columns: 2fr repeat(3, 1fr);
+            //  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+      }
+}
