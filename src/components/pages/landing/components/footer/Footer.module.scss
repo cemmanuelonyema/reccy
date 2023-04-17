@@ -29,7 +29,7 @@
       .company {
             display: flex;
             flex-direction: column;
-            gap: 1.2rem;
+            gap: 2.4rem;
       }
       .icons {
             display: flex;
@@ -43,6 +43,13 @@
       .dev {
             color: #f7f7f7;
             padding: 0 0.5rem;
+      }
+      &_contact {
+            font-style: normal;
+            line-height: 1.6;
+      }
+      &_address {
+            margin-bottom: 1.6rem;
       }
 
       a {
