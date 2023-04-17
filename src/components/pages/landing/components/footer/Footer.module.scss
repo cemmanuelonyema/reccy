@@ -7,7 +7,11 @@
       &__container {
             display: grid;
             grid-template-columns: 2fr repeat(3, 1fr);
-            //  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+            gap: 2.8rem;
+
+            @media (max-width: 37.5em) {
+                  grid-template-columns: 1fr;
+            }
       }
 
       &_heading {
@@ -30,6 +34,11 @@
       .icons {
             display: flex;
             gap: 0.8rem;
+      }
+      .iconBox {
+            background-color: #044d34;
+            padding: 1rem;
+            border-radius: 1rem;
       }
       .dev {
             color: #f7f7f7;

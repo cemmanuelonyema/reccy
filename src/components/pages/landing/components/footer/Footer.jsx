@@ -1,5 +1,11 @@
 import React from 'react';
 import styles from './Footer.module.scss';
+import {
+      FaFacebookF,
+      FaTwitter,
+      FaLinkedinIn,
+      FaInstagram,
+} from 'react-icons/fa';
 
 const Footer = () => {
       const date = new Date();
@@ -10,10 +16,31 @@ const Footer = () => {
                         <div className={styles.company}>
                               <img src="" alt="logo" />
                               <div className={styles.icons}>
-                                    <span>fa</span>
-                                    <span>Ins</span>
-                                    <span>twi</span>
-                                    <span>lin</span>
+                                    <div className={styles.iconBox}>
+                                          <FaInstagram
+                                                size={25}
+                                                style={{ color: '#4DC39E' }}
+                                          />
+                                    </div>
+                                    <div className={styles.iconBox}>
+                                          <FaFacebookF
+                                                size={25}
+                                                style={{ color: '#4DC39E' }}
+                                          />
+                                    </div>
+
+                                    <div className={styles.iconBox}>
+                                          <FaLinkedinIn
+                                                size={25}
+                                                style={{ color: '#4DC39E' }}
+                                          />
+                                    </div>
+                                    <div className={styles.iconBox}>
+                                          <FaTwitter
+                                                size={25}
+                                                style={{ color: '#4DC39E' }}
+                                          />
+                                    </div>
                               </div>
                               <p className={styles.footer_para}>
                                     Copyright &copy; {year} by Omnifood, Inc.{' '}
