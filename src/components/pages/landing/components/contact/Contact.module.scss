@@ -6,8 +6,8 @@
       //     padding: 10rem 0;
       // }
       &_form {
-            width: 50%;
-            padding: 6rem;
+            // width: 50%;
+            // padding: 6rem;
 
             // @include respond(tab-land) {
             //     width: 65%;
@@ -17,25 +17,69 @@
             //     width: 100%;
             // }
       }
+
+      .btn {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 1.5rem 4rem;
+            display: inline-block;
+            border-radius: 10rem;
+            transition: all 0.2s;
+            position: relative;
+            font-size: 1.6rem;
+
+            //Change for the <button> element
+            border: none;
+            cursor: pointer;
+
+            background-color: green;
+            color: white;
+            margin-top: 2.4rem;
+      }
 }
 
 .book {
       background-image: linear-gradient(
                   105deg,
                   rgba(#fff, 0.9) 0%,
-                  rgba(#fff, 0.9) 50%,
-                  transparent 50%
+                  rgba(#fff, 0.9) 55%,
+                  transparent 55%
             ),
             url(/eating.jpg);
       background-size: 100%;
       background-size: cover;
       border-radius: 3px;
       box-shadow: 0 1.5rem 4rem rgba(#000, 0.2);
+
+      @media (max-width: 37.5em) {
+            background-image: linear-gradient(
+                        90deg,
+                        rgba(#fff, 0.9) 0%,
+                        rgba(#fff, 0.9) 100%,
+                        transparent 100%
+                  ),
+                  url(/eating.jpg);
+      }
 }
 
 .form {
-      width: 50%;
+      width: 55%;
       padding: 6rem;
+
+      @media (max-width: 37.5em) {
+            width: 100%;
+            padding: 2.4rem;
+      }
+
+      h2 {
+            font-size: 3.2rem;
+            line-height: 1.2;
+            margin-bottom: 2.4rem;
+      }
+      p {
+            font-size: 1.6rem;
+            margin-bottom: 2.4rem;
+      }
       &_group:not(:last-child) {
             margin-bottom: 2rem;
       }
@@ -52,6 +96,9 @@
             width: 90%;
             display: block;
             transition: all 0.3s;
+            @media (max-width: 37.5em) {
+                  width: 100%;
+            }
 
             // @include respond(tab-port) {
             //       width: 100%;
