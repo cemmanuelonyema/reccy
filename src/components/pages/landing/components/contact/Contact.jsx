@@ -29,11 +29,11 @@ const Contact = () => {
             });
       };
       return (
-            <section className="section-book">
-                  <div className={`${styles.footer__container} container`}>
-                        <div className="book">
+            <section className={styles.sectionCta}>
+                  <div className={`${styles.cta__container} container`}>
+                        <div className={styles.book}>
                               <div className="book__form">
-                                    <form action="#" className="form">
+                                    <form action="#" className={styles.form}>
                                           <div className="u-margin-bottom-medium">
                                                 <h2 className="heading-secondary">
                                                       Get your first meal for
@@ -50,33 +50,41 @@ const Contact = () => {
                                                 </p>
                                           </div>
 
-                                          <div className="form__group">
+                                          <div className={styles.form_group}>
                                                 <input
                                                       type="text"
-                                                      className="form__input"
+                                                      className={
+                                                            styles.form_input
+                                                      }
                                                       placeholder="Full name"
                                                       id="name"
                                                       required
                                                 />
                                                 <label
                                                       for="name"
-                                                      className="form__label"
+                                                      className={
+                                                            styles.form_label
+                                                      }
                                                 >
                                                       Full name
                                                 </label>
                                           </div>
 
-                                          <div className="form__group">
+                                          <div className={styles.form_group}>
                                                 <input
                                                       type="email"
-                                                      className="form__input"
+                                                      className={
+                                                            styles.form_input
+                                                      }
                                                       placeholder="Email address"
                                                       id="email"
                                                       required
                                                 />
                                                 <label
                                                       for="email"
-                                                      className="form__label"
+                                                      className={
+                                                            styles.form_label
+                                                      }
                                                 >
                                                       Email address
                                                 </label>
@@ -109,7 +117,7 @@ const Contact = () => {
                                                 </select>
                                           </div>
 
-                                          <div className="form__group">
+                                          <div className={styles.form_group}>
                                                 <button className="btn btn--green">
                                                       Sign up now!
                                                 </button>
