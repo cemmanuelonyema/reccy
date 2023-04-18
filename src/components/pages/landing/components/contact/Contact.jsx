@@ -90,7 +90,11 @@ const Contact = () => {
                                                 </label>
                                           </div>
                                           <div className={styles.formGroup}>
-                                                <label>
+                                                <label
+                                                      className={
+                                                            styles.form_label
+                                                      }
+                                                >
                                                       Where did you hear about
                                                       us
                                                 </label>
@@ -98,6 +102,9 @@ const Contact = () => {
                                                       name="label"
                                                       value={source}
                                                       onChange={handleChange}
+                                                      className={
+                                                            styles.form_input
+                                                      }
                                                 >
                                                       <option value="family">
                                                             Please choose one
@@ -118,7 +125,7 @@ const Contact = () => {
                                           </div>
 
                                           <div className={styles.form_group}>
-                                                <button className="btn btn--green">
+                                                <button className={styles.btn}>
                                                       Sign up now!
                                                 </button>
                                           </div>
