@@ -1,0 +1,14 @@
+.featuresUl {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2.4rem;
+
+      @media (max-width: 37.5em) {
+            grid-template-columns: 1fr;
+      }
+}
+
+.featuresLi {
+      border: 1px solid black;
+      padding: 2.4rem;
+}
