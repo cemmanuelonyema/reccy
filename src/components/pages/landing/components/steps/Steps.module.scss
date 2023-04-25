@@ -1,0 +1,11 @@
+.stepsUl {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+}
+
+.stepsLi {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.4rem;
+}
