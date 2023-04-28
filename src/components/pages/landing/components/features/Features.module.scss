@@ -9,6 +9,19 @@
 }
 
 .featuresLi {
-      border: 1px solid black;
-      padding: 2.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      padding: 3rem;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all 0.4s ease-in-out;
+      border: 1px solid white;
+      background-color: var(--grey-light-2);
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.612);
+
+      &:hover {
+            transform: scale(1.05);
+      }
 }
