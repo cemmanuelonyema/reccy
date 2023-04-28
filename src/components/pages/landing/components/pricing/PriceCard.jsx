@@ -1,21 +1,19 @@
-import styles from './PriceCard.module.scss';
+import './PriceCard.scss';
 
 export const Card = ({ data: { id, price, title, items } }) => (
-      <article className={styles.card}>
-            <div className={`${styles.card__side} ${styles.card__side__front}`}>
-                  <div
-                        className={`${styles.card__picture} ${styles.card__picture__}`}
-                  >
+      <article className="card">
+            <div className="card__side card__side--front">
+                  <div className={`card__picture card__picture--${id}`}>
                         &nbsp;
                   </div>
-                  <h4 className={styles.card__heading}>
+                  <h4 className="card__heading">
                         <span
-                              className={`${styles.card__heading_span} ${styles.card__heading_span__}`}
+                              className={`card__heading-span card__heading-span--${id}`}
                         >
                               {title}
                         </span>
                   </h4>
-                  <div className={styles.card__details}>
+                  <div className="card__details">
                         <ul>
                               {items?.map((item, i) => (
                                     <li key={i}>{item}</li>
@@ -24,15 +22,12 @@ export const Card = ({ data: { id, price, title, items } }) => (
                   </div>
             </div>
             <div
-                  //   className={`card__side card__side--back card__side--back-${id}`}
-                  className={`${styles.card__side} ${styles.card__side__back} ${styles.card__side__back_}`}
+                  className={`card__side card__side--back card__side--back-${id}`}
             >
-                  <div className={styles.card__cta}>
-                        <div className={styles.card__price_box}>
-                              <p className={styles.card__price_only}>Only</p>
-                              <p className={styles.card__price_value}>
-                                    {price}
-                              </p>
+                  <div className="card__cta">
+                        <div className="card__price-box">
+                              <p className="card__price-only">Only</p>
+                              <p className="card__price-value">{price}</p>
                         </div>
                         <a href="#popup" className="btn btn--white">
                               Book now!
