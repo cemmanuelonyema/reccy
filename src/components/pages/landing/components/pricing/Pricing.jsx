@@ -43,8 +43,8 @@ const pricesData = [
 
 const Pricing = () => {
       return (
-            <section>
-                  <div className={`${styles.footer__container} container`}>
+            <section className={styles.price}>
+                  <div className={`${styles.price__container} container`}>
                         <div>
                               <h2>Pricing</h2>
                               <p>
