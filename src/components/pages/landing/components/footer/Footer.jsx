@@ -18,26 +18,26 @@ const Footer = () => {
                               <div className={styles.icons}>
                                     <div className={styles.iconBox}>
                                           <FaInstagram
-                                                size={25}
+                                                size={16}
                                                 style={{ color: '#4DC39E' }}
                                           />
                                     </div>
                                     <div className={styles.iconBox}>
                                           <FaFacebookF
-                                                size={25}
+                                                size={16}
                                                 style={{ color: '#4DC39E' }}
                                           />
                                     </div>
 
                                     <div className={styles.iconBox}>
                                           <FaLinkedinIn
-                                                size={25}
+                                                size={16}
                                                 style={{ color: '#4DC39E' }}
                                           />
                                     </div>
                                     <div className={styles.iconBox}>
                                           <FaTwitter
-                                                size={25}
+                                                size={16}
                                                 style={{ color: '#4DC39E' }}
                                           />
                                     </div>

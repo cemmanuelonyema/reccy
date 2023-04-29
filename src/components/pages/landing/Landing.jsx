@@ -9,7 +9,7 @@ import Pricing from './components/pricing/Pricing';
 import Contact from './components/contact/Contact';
 import Steps from './components/steps/Steps';
 import Footer from './components/footer/Footer';
-import TestimonyGallery from './components/TestimonyGallery/TestimonyGallery';
+import TestimonyGallery from './components/TestimontGallery/TestimonyGallery';
 
 const Landing = () => {
       return (
