@@ -4,42 +4,34 @@ import styles from './Features.module.scss';
 const featuresData = [
       {
             id: 1,
-            title: 'Feature 1',
+            title: 'Never cook again!',
             icon: 'icon',
-            text:
-                  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, magnam molestias i' +
-                  'nventore amet deleniti dolorem. Odit maiores iste est cupiditate!',
+            text: 'Our subscriptions cover 365 days per year, even including major holidays.',
       },
       {
             id: 2,
-            title: 'Feature 2',
+            title: 'Local and organic',
             icon: 'icon',
-            text:
-                  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, magnam molestias i' +
-                  'nventore amet deleniti dolorem. Odit maiores iste est cupiditate!',
+            text: 'Our cooks only use local, fresh, and organic products to prepare your meals.',
       },
       {
             id: 3,
-            title: 'Feature 3',
+            title: 'No waste',
             icon: 'icon',
-            text:
-                  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, magnam molestias i' +
-                  'nventore amet deleniti dolorem. Odit maiores iste est cupiditate!',
+            text: 'All our partners only use reusable containers to package all your meals.',
       },
       {
             id: 4,
-            title: 'Feature 4',
+            title: 'Pause anytime',
             icon: 'icon',
-            text:
-                  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, magnam molestias i' +
-                  'nventore amet deleniti dolorem. Odit maiores iste est cupiditate!',
+            text: 'Going on vacation? Just pause your subscription, and we refund unused days.',
       },
 ];
 
 const Features = () => {
       return (
-            <section>
-                  <div className={`${styles.footer__container} container`}>
+            <section className={styles.features}>
+                  <div className={`${styles.features__container} container`}>
                         <div>
                               <h2>Features</h2>
                               <p>
@@ -52,12 +44,18 @@ const Features = () => {
                         <ul className={styles.featuresUl}>
                               {featuresData.map((data) => (
                                     <li
-                                          className={styles.featuresLi}
+                                          className={styles.feature}
                                           key={data.id}
                                     >
-                                          <span>{data.icon}</span>
-                                          <h3>{data.title}</h3>
-                                          <p>{data.text}</p>
+                                          <span className={styles.feature_icon}>
+                                                {data.icon}
+                                          </span>
+                                          <h3 className={styles.feature_title}>
+                                                {data.title}
+                                          </h3>
+                                          <p className={styles.feature_text}>
+                                                {data.text}
+                                          </p>
                                     </li>
                               ))}
                         </ul>
