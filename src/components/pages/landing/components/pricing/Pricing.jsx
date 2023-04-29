@@ -9,10 +9,9 @@ const pricesData = [
             img: 'img 1',
             price: '$ 457',
             items: [
-                  'lorem data 1',
-                  'lorem data 1',
-                  'lorem data 1',
-                  'lorem data 1',
+                  '1 meal per day',
+                  'Order from 11am to 9pm',
+                  'Delivery is free',
             ],
       },
       {
@@ -21,10 +20,10 @@ const pricesData = [
             img: 'img 2',
             price: '$ 457',
             items: [
-                  'lorem data 2',
-                  'lorem data 2',
-                  'lorem data 2',
-                  'lorem data 2',
+                  '2 meals per day',
+                  'Order 24/7',
+                  'Delivery is free',
+                  'Get access to latest recipes',
             ],
       },
       {

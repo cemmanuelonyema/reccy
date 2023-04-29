@@ -1,0 +1,15 @@
+.logos {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 2.4rem;
+}
+
+.imgBox {
+      height: 4.2rem;
+}
+
+.logoImg {
+      height: 100%;
+      filter: brightness(0);
+      opacity: 50%;
+}
