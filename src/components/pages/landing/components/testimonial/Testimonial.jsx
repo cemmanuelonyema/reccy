@@ -1,6 +1,46 @@
 import React from 'react';
 import styles from './Testimonial.module.scss';
 
+const testimonialData = [
+      {
+            id: 1,
+            quote:
+                  'Inexpensive, healthy and great-tasting                  meals, without even ha' +
+                  'ving to order    manually! It feels truly magical ',
+            author: ' Dave Bryson',
+            img: '',
+      },
+      {
+            id: 2,
+            quote:
+                  'The AI algorithm is crazy good, it chooses the right meals for me every time. It' +
+                  's amazing not to worry bout                                          food anymor' +
+                  'e!',
+            author: 'Ben Hadley',
+            img: '',
+      },
+      {
+            id: 3,
+            quote:
+                  '  Omnifood is a life saver! I just                                      started ' +
+                  'a company, so there s no time                                          for cooki' +
+                  'ng. I couldnt live without                                          my daily mea' +
+                  'ls now!',
+            author: 'Steve Miller',
+            img: '',
+      },
+      {
+            id: 4,
+            quote:
+                  '   I got Omnifood for the whole family, ' +
+                  ' and it frees up so much time! Plus, ' +
+                  'everything is organic and vegan and without plastic' +
+                  '',
+            author: 'Hannah Smith',
+            img: '',
+      },
+];
+
 const Testimonial = () => {
       return (
             <section class="section-testimonials" id="testimonials">
@@ -10,73 +50,24 @@ const Testimonial = () => {
                               Once you try it, you can't go back
                         </h2>
 
-                        <div class="testimonials">
-                              <figure class="testimonial">
-                                    <img
-                                          class="testimonial-img"
-                                          alt="Photo of customer Dave Bryson"
-                                          src="img/customers/dave.jpg"
-                                    />
-                                    <blockquote class="testimonial-text">
-                                          Inexpensive, healthy and great-tasting
-                                          meals, without even having to order
-                                          manually! It feels truly magical.
-                                    </blockquote>
-                                    <p class="testimonial-name">
-                                          &mdash; Dave Bryson
-                                    </p>
-                              </figure>
-
-                              <figure class="testimonial">
-                                    <img
-                                          class="testimonial-img"
-                                          alt="Photo of customer Ben Hadley"
-                                          src="img/customers/ben.jpg"
-                                    />
-                                    <blockquote class="testimonial-text">
-                                          The AI algorithm is crazy good, it
-                                          chooses the right meals for me every
-                                          time. It's amazing not to worry about
-                                          food anymore!
-                                    </blockquote>
-                                    <p class="testimonial-name">
-                                          &mdash; Ben Hadley
-                                    </p>
-                              </figure>
-
-                              <figure class="testimonial">
-                                    <img
-                                          class="testimonial-img"
-                                          alt="Photo of customer Steve Miller"
-                                          src="img/customers/steve.jpg"
-                                    />
-                                    <blockquote class="testimonial-text">
-                                          Omnifood is a life saver! I just
-                                          started a company, so there's no time
-                                          for cooking. I couldn't live without
-                                          my daily meals now!
-                                    </blockquote>
-                                    <p class="testimonial-name">
-                                          &mdash; Steve Miller
-                                    </p>
-                              </figure>
-
-                              <figure class="testimonial">
-                                    <img
-                                          class="testimonial-img"
-                                          alt="Photo of customer Hannah Smith"
-                                          src="img/customers/hannah.jpg"
-                                    />
-                                    <blockquote class="testimonial-text">
-                                          I got Omnifood for the whole family,
-                                          and it frees up so much time! Plus,
-                                          everything is organic and vegan and
-                                          without plastic.
-                                    </blockquote>
-                                    <p class="testimonial-name">
-                                          &mdash; Hannah Smith
-                                    </p>
-                              </figure>
+                        <div class={styles.testimonials}>
+                              {testimonialData.map((data) => (
+                                    <figure class="testimonial">
+                                          <img
+                                                class={styles.testimonial_img}
+                                                alt="Photo of customer"
+                                                src={data.img}
+                                          />
+                                          <blockquote
+                                                class={styles.testimonial_text}
+                                          >
+                                                {data.quote}
+                                          </blockquote>
+                                          <p class={styles.testimonial_name}>
+                                                &mdash; {data.author}
+                                          </p>
+                                    </figure>
+                              ))}
                         </div>
                   </div>
             </section>
