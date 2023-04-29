@@ -66,13 +66,15 @@
             border-top-right-radius: 3px;
 
             &--1 {
-                  background-image: linear-gradient(
-                              to right bottom,
+                  //   background-image: linear-gradient(
+                  //               to right bottom,
 
-                              var(--secondary-color-light),
-                              var(--secondary-color-dark)
-                        ),
-                        url(/img2/nat-5.jpg);
+                  //               var(--secondary-color-light),
+                  //               var(--secondary-color-dark)
+                  //         ),
+                  //         url(/public/img/customer-2.jpg);
+
+                  background-image: url(/public//eating.jpg);
             }
 
             &--2 {
