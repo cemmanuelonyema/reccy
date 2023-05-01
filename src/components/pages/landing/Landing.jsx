@@ -4,13 +4,12 @@ import { Link } from 'react-router-dom';
 import Hero from './components/hero/Hero';
 import Featured from './components/featured/Featured';
 import Meals from './components/meals/Meals';
-import Testimonial from './components/testimonial/Testimonial';
-import { Gallery } from './components/gallery/Gallery';
 import Features from './components/features/Features';
 import Pricing from './components/pricing/Pricing';
 import Contact from './components/contact/Contact';
 import Steps from './components/steps/Steps';
 import Footer from './components/footer/Footer';
+import TestimonyGallery from './components/TestimontGallery/TestimonyGallery';
 
 const Landing = () => {
       return (
@@ -20,8 +19,8 @@ const Landing = () => {
                   <Features />
                   <Steps />
                   <Meals />
-                  <Testimonial />
-                  <Gallery />
+                  <TestimonyGallery />
+
                   <Pricing />
                   <Contact />
                   <Footer />

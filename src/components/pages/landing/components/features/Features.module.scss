@@ -8,7 +8,8 @@
       }
 }
 
-.featuresLi {
+
+.feature {
       display: flex;
       flex-direction: column;
       gap: 2rem;
@@ -23,5 +24,20 @@
 
       &:hover {
             transform: scale(1.05);
+      }
+
+      &_title {
+            font-size: 2.4rem;
+            color: #333;
+            font-weight: 700;
+            margin-bottom: 1.6rem;
+      }
+
+      &_text {
+            font-size: 1.8rem;
+            line-height: 1.8;
+      }
+
+      &_icon {
       }
 }
