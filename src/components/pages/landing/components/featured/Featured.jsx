@@ -33,23 +33,6 @@ const Featured = () => {
                                           />
                                     </div>
                               ))}
-
-                              {/* <img
-                                    src="img/logos/business-insider.png"
-                                    alt="Business Insider logo"
-                              />
-                              <img
-                                    src="img/logos/the-new-york-times.png"
-                                    alt="The New York Times logo"
-                              />
-                              <img
-                                    src="img/logos/forbes.png"
-                                    alt="Forbes logo"
-                              />
-                              <img
-                                    src="img/logos/usa-today.png"
-                                    alt="USA Today logo"
-                              /> */}
                         </div>
                   </div>
             </section>

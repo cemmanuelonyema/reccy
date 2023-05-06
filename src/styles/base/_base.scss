@@ -17,8 +17,32 @@
 
 html {
       box-sizing: border-box;
-      font-size: 62.5%;
       scroll-behavior: smooth;
+      font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+      @include respond(sm) {
+            // width < 600?
+            font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+      }
+      @include respond(md) {
+            // width < 760?
+            font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+      }
+
+      @include respond(hi) {
+            // width < 900?
+            font-size: 50%; //1 rem = 8px, 8/16 = 50%
+      }
+
+      @include respond(lg) {
+            // width < 1024?
+            font-size: 75%; //1rem = 12, 12/16
+      }
+
+      @include respond(xl) {
+            // width < 1200?
+            font-size: 75%; //1rem = 12, 12/16
+      }
 }
 
 button,
