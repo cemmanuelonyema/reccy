@@ -2,6 +2,7 @@
 // @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import '../abstract/mixins';
 
 :root {
       font-family: 'Lato', sans-serif;
@@ -21,16 +22,16 @@ html {
       font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
 
       @include respond(sm) {
-            // width < 600?
+            // width > 600?
             font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
       }
       @include respond(md) {
-            // width < 760?
+            // width > 760?
             font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
       }
 
       @include respond(hi) {
-            // width < 900?
+            // width > 900?
             font-size: 50%; //1 rem = 8px, 8/16 = 50%
       }
 
