@@ -1,17 +1,28 @@
 import React from 'react';
 import styles from './Hero.module.scss';
 import { Link } from 'react-router-dom';
+import {
+      cus1,
+      cus2,
+      cus3,
+      cus4,
+      cus5,
+      cus6,
+      heroDish,
+} from '../../../../../assets';
+
+const customers = [cus1, cus2, cus3, cus4, cus5, cus6];
 
 const Hero = () => {
       return (
-            <section class="section-hero">
-                  <div class={styles.hero}>
-                        <div class="hero-text-box">
-                              <h1 class="heading-primary">
+            <section className="section-hero">
+                  <div className={styles.hero}>
+                        <div className="hero-text-box">
+                              <h1 className="heading-primary">
                                     A healthy meal delivered to your door, every
                                     single day
                               </h1>
-                              <p class="hero-description">
+                              <p className="hero-description">
                                     The smart 365-days-per-year food
                                     subscription that will make you eat healthy
                                     again. Tailored to your personal tastes and
@@ -19,49 +30,32 @@ const Hero = () => {
                               </p>
                               <a
                                     href="#cta"
-                                    class="btn btn--full margin-right-sm"
+                                    className="btn btn--full margin-right-sm"
                               >
                                     Start eating well
                               </a>
 
-                              <Link to="recipes" class="btn btn--outline">
+                              <Link to="recipes" className="btn btn--outline">
                                     Search recipes&darr;
                               </Link>
-                              <div class="delivered-meals">
-                                    <div class={styles.imgs}>
-                                          <img
-                                                src="/img/customer-1.jpg"
-                                                alt="Customer photo"
-                                          />
-                                          <img
-                                                src="/img/customer-2.jpg"
-                                                alt="Customer photo"
-                                          />
-                                          <img
-                                                src="/img/customer-3.jpg"
-                                                alt="Customer photo"
-                                          />
-                                          <img
-                                                src="/img/customer-4.jpg"
-                                                alt="Customer photo"
-                                          />
-                                          <img
-                                                src="/img/customer-5.jpg"
-                                                alt="Customer photo"
-                                          />
-                                          <img
-                                                src="/img/customer-6.jpg"
-                                                alt="Customer photo"
-                                          />
+                              <div className="delivered-meals">
+                                    <div className={styles.imgs}>
+                                          {customers.map((cus, i) => (
+                                                <img
+                                                      key={i}
+                                                      src={cus}
+                                                      alt="Customer photo"
+                                                />
+                                          ))}
                                     </div>
-                                    <p class="delivered-text">
+                                    <p className="delivered-text">
                                           <span>250,000+</span> meals delivered
                                           last year!
                                     </p>
                               </div>
                         </div>
-                        <div class="hero-img-box">
-                              <picture>
+                        <div className={styles.hero_imgBox}>
+                              {/* <picture>
                                     <source
                                           srcset="img/hero.webp"
                                           type="image/webp"
@@ -72,11 +66,13 @@ const Hero = () => {
                                     />
 
                                     <img
-                                          src="img/hero-min.png"
-                                          class="hero-img"
+                                          src={heroDish}
+                                          className="hero-img"
                                           alt="Woman enjoying food, meals in storage container, and food bowls on a table"
                                     />
-                              </picture>
+                              </picture> */}
+
+                              <img src={heroDish} alt="hero dish" />
                         </div>
                   </div>
             </section>

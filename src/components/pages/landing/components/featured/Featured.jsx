@@ -6,7 +6,7 @@ import {
       featured3,
       featured4,
       featured5,
-} from '../../../../../../public';
+} from '../../../../../assets';
 
 const logos = [
       { src: featured1 },

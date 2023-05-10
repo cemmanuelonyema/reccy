@@ -1,30 +1,30 @@
 import React from 'react';
 import styles from './Gallery.module.scss';
-import img1 from '/img/customer-1.jpg';
+import { dish1 } from '../../../../../assets';
 
 const galleryimages = [
-      { src: img1 },
-      { src: img1 },
-      { src: img1 },
-      { src: img1 },
-      { src: img1 },
-      { src: img1 },
-      { src: img1 },
-      { src: img1 },
-      { src: img1 },
-      { src: img1 },
-      { src: img1 },
-      { src: img1 },
+      { src: dish1 },
+      { src: dish1 },
+      { src: dish1 },
+      { src: dish1 },
+      { src: dish1 },
+      { src: dish1 },
+      { src: dish1 },
+      { src: dish1 },
+      { src: dish1 },
+      { src: dish1 },
+      { src: dish1 },
+      { src: dish1 },
 ];
 
 export const Gallery = () => {
       return (
             <section>
-                  <div class={styles.gallery}>
-                        {galleryimages.map(() => (
-                              <figure class={styles.gallery_item}>
+                  <div className={styles.gallery}>
+                        {galleryimages.map((data, i) => (
+                              <figure className={styles.gallery_item} key={i}>
                                     <img
-                                          src={img1}
+                                          src={data.src}
                                           alt="Photo of a food in our gallery"
                                     />
                               </figure>

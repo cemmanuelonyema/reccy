@@ -1,6 +1,7 @@
 .hero {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      //   grid-template-columns: 1fr 1fr;
+      align-items: center;
       h1 {
             font-size: 5.2rem;
             line-height: 1.05;
@@ -26,5 +27,12 @@
 
       .delivered-imgs img:last-child {
             margin: 0;
+      }
+
+      &_imgBox {
+            text-align: center;
+            img {
+                  width: 70%;
+            }
       }
 }
