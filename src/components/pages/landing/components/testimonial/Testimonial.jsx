@@ -35,12 +35,28 @@ const testimonialData = [
             author: 'Hannah Smith',
             img: '',
       },
+      {
+            id: 5,
+            quote:
+                  'I got Omnifood for the whole family,  and it frees up so much time! Plus, eve' +
+                  'rything is organic and vegan and without plastic',
+            author: 'Hannah Smith',
+            img: '',
+      },
+      {
+            id: 6,
+            quote:
+                  'I got Omnifood for the whole family,  and it frees up so much time! Plus, eve' +
+                  'rything is organic and vegan and without plastic',
+            author: 'Hannah Smith',
+            img: '',
+      },
 ];
 
 const Testimonial = () => {
       return (
             <section class="section-testimonials" id="testimonials">
-                  <div class="testimonials-container">
+                  <div className={`${styles.t__container} container`}>
                         <span class="subheading">Testimonials</span>
                         <h2 class="heading-secondary">
                               Once you try it, you can't go back

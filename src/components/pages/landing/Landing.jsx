@@ -10,6 +10,8 @@ import Contact from './components/contact/Contact';
 import Steps from './components/steps/Steps';
 import Footer from './components/footer/Footer';
 import TestimonyGallery from './components/TestimontGallery/TestimonyGallery';
+import Testimonial from './components/testimonial/Testimonial';
+import { Gallery } from './components/gallery/Gallery';
 
 const Landing = () => {
       return (
@@ -19,7 +21,10 @@ const Landing = () => {
                   <Features />
                   <Steps />
                   <Meals />
-                  <TestimonyGallery />
+                  <Testimonial />
+                  <Gallery />
+
+                  {/* <TestimonyGallery /> */}
 
                   <Pricing />
                   <Contact />
