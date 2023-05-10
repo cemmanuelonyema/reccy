@@ -1,8 +1,11 @@
 .gallery {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      flex-direction: column;
+      //   grid-template-columns: repeat(2, 1fr);
+      //   grid-template-rows: repeat(2, 1fr);
       gap: 1.6rem;
       padding: 1.6rem;
+      overflow: hidden;
 
       &_item {
             overflow: hidden;
@@ -17,4 +20,12 @@
                   }
             }
       }
+}
+
+.imgSection1 {
+      display: flex;
+}
+
+.imgSection2 {
+      display: flex;
 }

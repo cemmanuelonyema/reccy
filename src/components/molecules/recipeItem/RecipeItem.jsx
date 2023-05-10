@@ -22,7 +22,9 @@ export const RecipeItem = ({ recipe }) => {
                               <h2 className={styles.recipe__title}>
                                     {recipe?.title}
                               </h2>
-                              <span className={styles.detailsLink}>See details &gt; </span>
+                              <span className={styles.detailsLink}>
+                                    See details &gt;{' '}
+                              </span>
                         </div>
                   </Link>
             </li>
