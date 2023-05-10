@@ -5,8 +5,8 @@ const testimonialData = [
       {
             id: 1,
             quote:
-                  'Inexpensive, healthy and great-tasting                  meals, without even ha' +
-                  'ving to order    manually! It feels truly magical ',
+                  'Inexpensive, healthy and great-tasting                  meals, without even havi' +
+                  'ng to order    manually! It feels truly magical ',
             author: ' Dave Bryson',
             img: '',
       },
@@ -22,20 +22,16 @@ const testimonialData = [
       {
             id: 3,
             quote:
-                  '  Omnifood is a life saver! I just                                      started ' +
-                  'a company, so there s no time                                          for cooki' +
-                  'ng. I couldnt live without                                          my daily mea' +
-                  'ls now!',
+                  '  Omnifood is a life saver! I just started a company, so there s no time for coo' +
+                  'king. I couldnt live without my daily meals now!',
             author: 'Steve Miller',
             img: '',
       },
       {
             id: 4,
             quote:
-                  '   I got Omnifood for the whole family, ' +
-                  ' and it frees up so much time! Plus, ' +
-                  'everything is organic and vegan and without plastic' +
-                  '',
+                  'I got Omnifood for the whole family,  and it frees up so much time! Plus, eve' +
+                  'rything is organic and vegan and without plastic',
             author: 'Hannah Smith',
             img: '',
       },

@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './Steps.module.scss';
+import app from '../../../../../assets/img/app.png';
 
-const stepsDate = [
+const stepsData = [
       {
             id: '01',
             title: 'Step 01',
-            img: 'image 01',
+            img: app,
             text:
                   'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, magnam molestias i' +
                   'nventore amet deleniti dolorem. Odit maiores iste est cupiditate!',
@@ -13,7 +14,7 @@ const stepsDate = [
       {
             id: '02',
             title: 'Step 2',
-            img: 'image 2',
+            img: app,
             text:
                   'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, magnam molestias i' +
                   'nventore amet deleniti dolorem. Odit maiores iste est cupiditate!',
@@ -21,7 +22,7 @@ const stepsDate = [
       {
             id: '03',
             title: 'Step 3',
-            img: 'image 3',
+            img: app,
             text:
                   'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, magnam molestias i' +
                   'nventore amet deleniti dolorem. Odit maiores iste est cupiditate!',
@@ -42,21 +43,21 @@ const Steps = () => {
                         </div>
 
                         <div className={styles.stepsUl}>
-                              {stepsDate.map((data) => (
+                              {stepsData.map((data) => (
                                     <div
                                           className={styles.stepsLi}
                                           key={data.id}
                                     >
                                           <div>
-                                                <span>{data.id}</span>
-                                                <h3>{data.title}</h3>
-                                                <p>{data.text}</p>
-                                          </div>
-                                          <div>
                                                 <img
                                                       src={data.img}
                                                       alt={`image ${data.id}`}
                                                 />
+                                          </div>
+                                          <div>
+                                                <span>{data.id}</span>
+                                                <h3>{data.title}</h3>
+                                                <p>{data.text}</p>
                                           </div>
                                     </div>
                               ))}
