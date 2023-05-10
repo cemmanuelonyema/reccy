@@ -48,7 +48,7 @@ const Steps = () => {
                                           className={styles.stepsLi}
                                           key={data.id}
                                     >
-                                          <div>
+                                          <div className={styles.stepImgBox}>
                                                 <img
                                                       src={data.img}
                                                       alt={`image ${data.id}`}
