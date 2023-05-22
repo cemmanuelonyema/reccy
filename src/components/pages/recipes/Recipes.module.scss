@@ -1,8 +1,21 @@
+@import '../../../styles/abstract/mixins';
+
 .recipes {
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      position: relative;
 
       &__container {
+      }
+}
+
+.hidden {
+      display: block;
+      padding-top: 2.4rem;
+
+      @include respond(md) {
+            display: none;
+            // width > 760?
       }
 }

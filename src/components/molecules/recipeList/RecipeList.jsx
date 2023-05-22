@@ -14,7 +14,8 @@ export const RecipeList = () => {
       return (
             <section className={styles.recipes_section}>
                   <div className={styles.results}>
-                        {recipes.length} Results found
+                        {recipes.length !== 0 &&
+                              `${recipes.length} Results Found`}
                   </div>
                   <ul className={styles.recipes__list}>
                         {currentItems.map((recipe) => (
