@@ -1,5 +1,14 @@
-  .icon {
-    height: 2.25rem;
-    width: 2.25rem;
-    fill: currentColor;
-  }
+.icon {
+      height: 2.25rem;
+      width: 2.25rem;
+      fill: currentColor;
+}
+
+.toTop {
+      position: fixed;
+      top: 90vh;
+      right: 3.2rem;
+      background: green;
+      padding: 1.2rem;
+      border-radius: 50%;
+}
