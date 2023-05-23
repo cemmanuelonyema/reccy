@@ -1,6 +1,10 @@
 .sectionCta {
       padding: 15rem 0;
-      background-image: linear-gradient(to right bottom, green, blue);
+      background-image: linear-gradient(
+            to right bottom,
+            var(--primary-color),
+            var(--primary-dark)
+      );
 
       // @include respond(tab-port) {
       //     padding: 10rem 0;
@@ -32,7 +36,7 @@
             border: none;
             cursor: pointer;
 
-            background-color: green;
+            background-color: var(--primary-color);
             color: white;
             margin-top: 2.4rem;
       }

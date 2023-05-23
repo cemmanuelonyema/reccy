@@ -32,10 +32,10 @@ const pricesData = [
             img: 'img 3',
             price: '$ 457',
             items: [
-                  'lorem data 3',
-                  'lorem data 3',
-                  'lorem data 3',
-                  'lorem data 3',
+                  '3 meals per day',
+                  'Order 24/7',
+                  'Delivery is free',
+                  'Get access to latest recipes',
             ],
       },
 ];
