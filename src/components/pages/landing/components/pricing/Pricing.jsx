@@ -12,6 +12,7 @@ const pricesData = [
                   '1 meal per day',
                   'Order from 11am to 9pm',
                   'Delivery is free',
+                  'limited recipes',
             ],
       },
       {

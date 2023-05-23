@@ -21,6 +21,7 @@ export const Card = ({ data: { id, price, title, items } }) => (
                         </ul>
                   </div>
             </div>
+
             <div
                   className={`card__side card__side--back card__side--back-${id}`}
             >
