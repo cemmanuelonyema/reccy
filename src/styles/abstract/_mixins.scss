@@ -45,26 +45,26 @@ ORDER: Base + typography > general layout + grid > page layout > components
                   @content;
             } //600px
       }
+
       @if $breakpoint == md {
             @media only screen and (min-width: 47.5em) {
                   @content;
             } //760px
-
-            @if $breakpoint == hi {
-                  @media only screen and (min-width: 56.25em) {
-                        @content;
-                  } //900px
-            }
-            @if $breakpoint == lg {
-                  @media only screen and (min-width: 64em) {
-                        @content;
-                  } //1024px
-            }
-            @if $breakpoint == xl {
-                  @media only screen and (min-width: 75em) {
-                        @content;
-                  } //1200px
-            }
+      }
+      @if $breakpoint == hi {
+            @media only screen and (min-width: 56.25em) {
+                  @content;
+            } //900px
+      }
+      @if $breakpoint == lg {
+            @media only screen and (min-width: 64em) {
+                  @content;
+            } //1024px
+      }
+      @if $breakpoint == xl {
+            @media only screen and (min-width: 75em) {
+                  @content;
+            } //1200px
       }
 }
 

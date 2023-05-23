@@ -1,12 +1,14 @@
+@import '../../../../../styles/abstract/mixins';
+
 .price {
       padding: 8rem 0;
 }
+
 .prices {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2.4rem;
+      gap: 3.2rem;
 
-      @media (max-width: 37.5em) {
-            grid-template-columns: 1fr;
+      @include respond(hi) {
+            grid-template-columns: repeat(3, 1fr);
       }
 }
