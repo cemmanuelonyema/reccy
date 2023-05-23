@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './Hero.module.scss';
 import { Link } from 'react-router-dom';
+import styles from './Hero.module.scss';
 import {
       cus1,
       cus2,
@@ -15,8 +15,8 @@ const customers = [cus1, cus2, cus3, cus4, cus5, cus6];
 
 const Hero = () => {
       return (
-            <section className="section-hero">
-                  <div className={styles.hero}>
+            <section className={styles.hero}>
+                  <div className={`${styles.hero__container} container`}>
                         <div className="hero-text-box">
                               <h1 className="heading-primary">
                                     A healthy meal delivered to your door, every

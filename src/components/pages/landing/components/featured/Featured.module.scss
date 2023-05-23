@@ -1,15 +1,38 @@
+@import '../../../../../styles/abstract/mixins';
+
+.featured {
+      padding: 4.8rem 0;
+
+      &__container {
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+
+            h2 {
+                  text-align: center;
+            }
+      }
+}
+
 .logos {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 2.4rem;
+      display: flex;
+      justify-content: space-around;
 }
 
 .imgBox {
-      height: 4.2rem;
+      height: 1.2rem;
+
+      @include respond(sm) {
+            height: 1.8rem;
+      }
+
+      @include respond(md) {
+            height: 2.4rem;
+      }
 }
 
 .logoImg {
+      object-fit: cover;
       height: 100%;
-      filter: brightness(0);
-      opacity: 50%;
+      opacity: 80%;
 }

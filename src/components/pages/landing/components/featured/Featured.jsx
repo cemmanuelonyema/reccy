@@ -18,7 +18,7 @@ const logos = [
 
 const Featured = () => {
       return (
-            <section class="section-featured">
+            <section className={styles.featured}>
                   <div className={`${styles.featured__container} container`}>
                         <h2 class="heading-featured-in">As featured in</h2>
 
