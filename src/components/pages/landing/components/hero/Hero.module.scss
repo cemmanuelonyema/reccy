@@ -1,12 +1,14 @@
 @import '../../../../../styles/abstract/mixins';
 
 .hero {
-      display: grid;
-      align-items: center;
+      &__container {
+            display: grid;
+            align-items: center;
 
-      @include respond(md) {
-            // width > 900?
-            grid-template-columns: repeat(2, 1fr);
+            @include respond(md) {
+                  // width > 900?
+                  grid-template-columns: repeat(2, 1fr);
+            }
       }
 
       h1 {

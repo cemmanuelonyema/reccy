@@ -1,13 +1,21 @@
+@import '../../../../../styles/abstract/mixins';
+
 .featuresUl {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2.4rem;
+      gap: 4.2rem;
 
-      @media (max-width: 37.5em) {
-            grid-template-columns: 1fr;
+      @include respond(md) {
+            grid-template-columns: repeat(2, 1fr);
       }
-}
 
+      @include respond(hi) {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2.4rem;
+      }
+      //   @media (max-width: 37.5em) {
+      //         grid-template-columns: 1fr;
+      //   }
+}
 
 .feature {
       display: flex;
@@ -30,12 +38,9 @@
             font-size: 2.4rem;
             color: #333;
             font-weight: 700;
-            margin-bottom: 1.6rem;
       }
 
       &_text {
-            font-size: 1.8rem;
-            line-height: 1.8;
       }
 
       &_icon {

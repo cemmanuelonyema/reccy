@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { FaCheckCircle } from 'react-icons/fa';
 import { RecipeContext } from '../../../appState/recipe/RecipeProvider';
 import { Icon } from '../../atoms/icon/Icon';
 import { Footer } from '../../shared/footer/Footer';
@@ -132,7 +133,7 @@ export const RecipeDetail = () => {
                         <div class={styles.recipeDetail__ingredients}>
                               <h2 class="heading--2">Recipe ingredients</h2>
                               <ul class={styles.recipeDetail__ingredientList}>
-                                    <li class={styles.recipeDetail__ingredient}>
+                                    {/* <li class={styles.recipeDetail__ingredient}>
                                           <Icon iconName="check" />
 
                                           <div
@@ -174,7 +175,7 @@ export const RecipeDetail = () => {
                                                 </span>
                                                 ricotta cheese
                                           </div>
-                                    </li>
+                                    </li> */}
 
                                     {recipe?.ingredients?.map((item) => (
                                           <li
@@ -182,15 +183,31 @@ export const RecipeDetail = () => {
                                                       styles.recipeDetail__ingredient
                                                 }
                                           >
-                                                <Icon iconName="check" />
+                                                <FaCheckCircle
+                                                      size={24}
+                                                      color="#55c57a"
+                                                />
+                                                {/* <div className={styles.ingredient_box}>
+                                                      <span>
+                                                            {item.quantity}
+                                                      </span>
+                                                      <span> {item.unit}</span>
+                                                      <span>
+                                                            {item.description}
+                                                      </span>
+                                                </div> */}
 
                                                 <div
                                                       class={
                                                             styles.recipeDetail__quantity
                                                       }
                                                 >
-                                                      {item.quantity}
+                                                      <span>
+                                                            {item.quantity}
+                                                      </span>
+                                                      <span></span>
                                                 </div>
+
                                                 <div
                                                       class={
                                                             styles.recipeDetail__description

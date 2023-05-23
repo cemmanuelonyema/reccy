@@ -141,7 +141,10 @@
       }
 
       &__price-box {
-            margin-bottom: 3rem;
+            margin-bottom: 4rem;
+            @include respond(hi) {
+                  margin-bottom: 8rem;
+            }
       }
 
       &__price-value {
