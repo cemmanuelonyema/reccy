@@ -32,7 +32,7 @@ const Features = () => {
       return (
             <section className={styles.features}>
                   <div className={`${styles.features__container} container`}>
-                        <div>
+                        <div className={styles.textBox}>
                               <h2>Features</h2>
                               <p>
                                     Lorem ipsum, dolor sit amet consectetur
