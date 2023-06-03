@@ -1,6 +1,7 @@
 @import '../../../../../styles/abstract/mixins';
 
 .hero {
+      padding: 6rem 0;
       &__container {
             display: grid;
             align-items: center;

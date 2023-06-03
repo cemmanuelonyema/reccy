@@ -13,6 +13,7 @@
 .hidden {
       display: block;
       padding-top: 2.4rem;
+      width: inherit;
 
       @include respond(md) {
             display: none;

@@ -31,7 +31,7 @@ const stepsData = [
 
 const Steps = () => {
       return (
-            <section>
+            <section id="steps">
                   <div className={`${styles.footer__container} container`}>
                         <div>
                               <h2>Steps</h2>

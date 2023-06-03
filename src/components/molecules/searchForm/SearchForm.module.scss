@@ -10,9 +10,6 @@
       border: 1px solid black;
       flex: 0 0 60%;
 
-      @include respond(hi) {
-      }
-
       &:focus-within {
             transform: translateY(-3px);
       }

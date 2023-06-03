@@ -29,7 +29,7 @@ const Contact = () => {
             });
       };
       return (
-            <section className={styles.sectionCta}>
+            <section className={styles.sectionCta} id="contact">
                   <div className={`${styles.cta__container} container`}>
                         <div className={styles.book}>
                               <div className="book__form">

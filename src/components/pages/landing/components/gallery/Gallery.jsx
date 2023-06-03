@@ -7,7 +7,7 @@ const imgSection2 = [dish1, dish1, dish1, dish1, dish1, dish1];
 
 export const Gallery = () => {
       return (
-            <section>
+            <section id="gallery">
                   <div className={`${styles.t__container} container`}>
                         <h2>Dish gallery</h2>
                         <div className={styles.gallery}>
