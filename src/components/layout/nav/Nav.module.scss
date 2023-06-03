@@ -1,10 +1,22 @@
+@import '../../../styles/abstract/mixins';
+
 .nav {
-      background-color: blue;
+      //   background-color: blue;
+}
+
+.toggle {
+      @include respond(hi) {
+            display: none;
+      }
 }
 
 .navList {
-      display: flex;
+      display: none;
       align-items: center;
+
+      @include respond(hi) {
+            display: flex;
+      }
 }
 
 .toolBtn {
