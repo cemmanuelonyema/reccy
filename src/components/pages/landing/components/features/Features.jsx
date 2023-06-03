@@ -30,7 +30,7 @@ const featuresData = [
 
 const Features = () => {
       return (
-            <section className={styles.features}>
+            <section className={styles.features} id="features">
                   <div className={`${styles.features__container} container`}>
                         <div className={styles.textBox}>
                               <h2>Features</h2>

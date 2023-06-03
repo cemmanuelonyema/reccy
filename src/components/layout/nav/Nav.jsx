@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import styles from './Nav.module.scss';
 import { FaBookmark, FaHamburger, FaTimes } from '../../../assets/index';
-import { ThemeToggle } from '../../atoms/themeToggle/ThemeToggle';
 
 const Nav = () => {
       const [toggle, setToggle] = useState(false);
@@ -27,7 +26,6 @@ const Nav = () => {
                                     </span>
                               </button>
                         </li>
-                        <ThemeToggle />
                   </ul>
             </nav>
       );
