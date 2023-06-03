@@ -34,20 +34,18 @@ export const SearchForm = () => {
       }, [query]);
 
       return (
-            <Fragment>
-                  <form className={styles.form} onSubmit={handleSubmit}>
-                        <FaSearch size={18} />
+            <form className={styles.form} onSubmit={handleSubmit}>
+                  <FaSearch size={18} />
 
-                        <input
-                              className={styles.form__field}
-                              type="text"
-                              placeholder="Search recipes"
-                              onChange={handleChange}
-                              value={query}
-                        />
+                  <input
+                        className={styles.form__field}
+                        type="text"
+                        placeholder="Search recipes"
+                        onChange={handleChange}
+                        value={query}
+                  />
 
-                        {query && <FaTimes size={18} />}
-                  </form>
-            </Fragment>
+                  {query && <FaTimes size={18} />}
+            </form>
       );
 };

@@ -20,6 +20,7 @@
 
 .hidden {
       display: none;
+      flex: 0 0 60%;
 
       @include respond(md) {
             // width > 760?
