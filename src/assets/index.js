@@ -1,5 +1,11 @@
 //svg icons
-import { FaPlus, FaBookmark, FaHamburger, FaTimes } from 'react-icons/fa';
+import {
+      FaPlus,
+      FaBookmark,
+      FaHamburger,
+      FaTimes,
+      FaSearch,
+} from 'react-icons/fa';
 
 //images
 import logo from './img/logo.png';
@@ -37,4 +43,5 @@ export {
       FaBookmark,
       FaHamburger,
       FaTimes,
+      FaSearch,
 };

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Fragment, useContext } from 'react';
 import { RecipeContext } from '../../../appState/recipe/RecipeProvider';
-import { Icon } from '../../atoms/icon/Icon';
 import styles from './SearchForm.module.scss';
+import { FaSearch, FaTimes } from '../../../assets/index';
 
 export const SearchForm = () => {
       //context hook
@@ -36,7 +36,7 @@ export const SearchForm = () => {
       return (
             <Fragment>
                   <form className={styles.form} onSubmit={handleSubmit}>
-                        <Icon iconName="search" />
+                        <FaSearch size={18} />
 
                         <input
                               className={styles.form__field}
@@ -46,7 +46,7 @@ export const SearchForm = () => {
                               value={query}
                         />
 
-                        <Icon iconName="minus-circle" />
+                        {query && <FaTimes size={18} />}
                   </form>
             </Fragment>
       );
