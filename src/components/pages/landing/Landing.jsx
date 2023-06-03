@@ -8,7 +8,7 @@ import Steps from './components/steps/Steps';
 import Footer from './components/footer/Footer';
 import Testimonial from './components/testimonial/Testimonial';
 import { Gallery } from './components/gallery/Gallery';
-import LandingNav from './components/nav/landingNav';
+import LandingNav from './components/landingNav/LandingNav';
 
 const Landing = () => {
       return (
