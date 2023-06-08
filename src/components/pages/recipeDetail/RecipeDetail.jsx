@@ -14,6 +14,7 @@ import { Footer } from '../../shared/footer/Footer';
 
 //style
 import styles from './RecipeDetail.module.scss';
+import { BtnLink } from '../../atoms/btn/BtnLink';
 
 const recipe = {
       ingredients: [
@@ -89,66 +90,6 @@ export const RecipeDetail = () => {
                               />
                         </figure>
 
-                        <div class={styles.recipeDetail__details}>
-                              <div className={styles.detail__info}>
-                                    <div class={styles.recipeDetail__info}>
-                                          <FaClock size={24} />
-                                          <span
-                                                class={`${styles.recipeDetail__infoData} ${styles.recipeDetail__infoDataMinutes}`}
-                                          >
-                                                {recipe.cooking_time}
-                                          </span>
-                                          <span
-                                                class={
-                                                      styles.recipeDetail__infoText
-                                                }
-                                          >
-                                                minutes
-                                          </span>
-                                    </div>
-                                    <div class={styles.recipeDetail__info}>
-                                          <MdPeople size={24} />
-
-                                          <span
-                                                class={`${styles.recipeDetail__infoData} ${styles.recipeDetail__infoDataPeople}`}
-                                          >
-                                                {recipe.servings}
-                                          </span>
-                                          <span
-                                                class={
-                                                      styles.recipeDetail__infoText
-                                                }
-                                          >
-                                                servings
-                                          </span>
-
-                                          <div
-                                                class={
-                                                      styles.recipeDetail__infoButtons
-                                                }
-                                          >
-                                                <button class="btn--tiny btn--increase-servings">
-                                                      <FiMinusCircle
-                                                            size={24}
-                                                      />
-                                                </button>
-                                                <button class="btn--tiny btn--increase-servings">
-                                                      <FiPlusCircle size={24} />
-                                                </button>
-                                          </div>
-                                    </div>
-                              </div>
-
-                              {/* <div class="recipe__user-generated">
-                                    <button class="btn--round">
-                                          <Icon iconName="user" />
-                                    </button>
-                              </div> */}
-                              <button class="btn--round">
-                                    <FaBookmark size={24} />
-                              </button>
-                        </div>
-
                         <div class={styles.recipeDetail__ingredients}>
                               <h2 class="heading--2">Recipe ingredients</h2>
                               <ul class={styles.recipeDetail__ingredientList}>
@@ -199,17 +140,57 @@ export const RecipeDetail = () => {
                                     . Please check out directions at their
                                     website.
                               </p>
-                              <a
-                                    class="btn--small recipe__btn"
-                                    href={recipe?.source_url}
-                                    target="_blank"
-                              >
+
+                              <BtnLink href={recipe?.source_url}>
                                     <span>Directions</span>
                                     <FaArrowRight />
-                              </a>
+                              </BtnLink>
                         </div>
                   </div>
                   <Footer />
             </section>
       );
 };
+
+// <div class={styles.recipeDetail__details}>
+//       <div className={styles.detail__info}>
+//             <div class={styles.recipeDetail__info}>
+//                   <FaClock size={24} />
+//                   <span
+//                         class={`${styles.recipeDetail__infoData} ${styles.recipeDetail__infoDataMinutes}`}
+//                   >
+//                         {recipe.cooking_time}
+//                   </span>
+//                   <span class={styles.recipeDetail__infoText}>minutes</span>
+//             </div>
+//             <div class={styles.recipeDetail__info}>
+//                   <MdPeople size={24} />
+
+//                   <span
+//                         class={`${styles.recipeDetail__infoData} ${styles.recipeDetail__infoDataPeople}`}
+//                   >
+//                         {recipe.servings}
+//                   </span>
+//                   <span class={styles.recipeDetail__infoText}>servings</span>
+
+//                   <div class={styles.recipeDetail__infoButtons}>
+//                         <button class="btn--tiny btn--increase-servings">
+//                               <FiMinusCircle size={24} />
+//                         </button>
+//                         <button class="btn--tiny btn--increase-servings">
+//                               <FiPlusCircle size={24} />
+//                         </button>
+//                   </div>
+//             </div>
+//       </div>
+
+//       {/* <div class="recipe__user-generated">
+//                                     <button class="btn--round">
+//                                           <Icon iconName="user" />
+//                                     </button>
+//                               </div>
+//                                */}
+//       <button class="btn--round">
+//             <FaBookmark size={24} />
+//       </button>
+// </div>;

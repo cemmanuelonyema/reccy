@@ -31,6 +31,14 @@
       }
 
       &__title {
+            font-size: 3.25rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            margin-bottom: 2.5rem;
+            text-align: center;
+            text-transform: uppercase;
+            text-align: center;
             // position: absolute;
             // bottom: 0;
             // left: 50%;
@@ -38,24 +46,23 @@
             // color: black;
             // font-weight: 700;
             // font-size: 3.25rem;
-            // text-transform: uppercase;
             // width: 50%;
             // line-height: 1.95;
             // text-align: center;
 
-            span {
-                  -webkit-box-decoration-break: clone;
-                  box-decoration-break: clone;
-                  padding: 1.3rem 2rem;
-                  background-image: linear-gradient(
-                        to right bottom,
-                        var(--color-grad-1) var(--color-grad-2)
-                  );
-            }
+            // span {
+            //       -webkit-box-decoration-break: clone;
+            //       box-decoration-break: clone;
+            //       padding: 1.3rem 2rem;
+            //       background-image: linear-gradient(
+            //             to right bottom,
+            //             var(--color-grad-1) var(--color-grad-2)
+            //       );
+            // }
 
-            @media only screen and (max-width: var(--bp-medium)) {
-                  width: 70%;
-            }
+            // @media only screen and (max-width: var(--bp-medium)) {
+            //       width: 70%;
+            // }
       }
 
       ///////////
@@ -129,6 +136,15 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            h2 {
+                  font-size: 2rem;
+                  font-weight: 700;
+                  color: var(--primary-color);
+                  text-transform: uppercase;
+                  margin-bottom: 2.5rem;
+                  text-align: center;
+            }
       }
 
       &__ingredientList {
@@ -156,12 +172,19 @@
       ///////////
       // DIRECTIONS
       &__directions {
-            // padding: 5rem 10rem;
-            // padding-bottom: 5rem;
             padding: 5rem 0;
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            h2 {
+                  font-size: 2rem;
+                  font-weight: 700;
+                  color: var(--primary-color);
+                  text-transform: uppercase;
+                  margin-bottom: 2.5rem;
+                  text-align: center;
+            }
       }
 
       &__directionsText {
