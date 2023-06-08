@@ -5,7 +5,13 @@ import {
       FaHamburger,
       FaTimes,
       FaSearch,
+      FaClock,
+      FaCheckCircle,
+      FaArrowRight,
 } from 'react-icons/fa';
+import { MdPeople } from 'react-icons/md';
+import { FiPlusCircle, FiMinusCircle } from 'react-icons/fi';
+
 
 //images
 import logo from './img/logo.png';
@@ -44,4 +50,10 @@ export {
       FaHamburger,
       FaTimes,
       FaSearch,
+      FaClock,
+      FaCheckCircle,
+      MdPeople,
+      FiMinusCircle,
+      FiPlusCircle,
+      FaArrowRight,
 };
