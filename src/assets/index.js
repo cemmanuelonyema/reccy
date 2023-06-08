@@ -12,6 +12,7 @@ import {
 import { MdPeople } from 'react-icons/md';
 import { FiPlusCircle, FiMinusCircle } from 'react-icons/fi';
 
+
 //images
 import logo from './img/logo.png';
 import featured1 from './img/business-insider.png';
