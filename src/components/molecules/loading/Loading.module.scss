@@ -1,0 +1,21 @@
+.spinner {
+      margin: 8rem auto;
+      text-align: center;
+
+      svg {
+            height: 10%;
+            width: 8rem;
+            fill: var(--primary-color);
+            animation: rotate 3s infinite linear;
+      }
+}
+
+@keyframes rotate {
+      0% {
+            transform: rotate(0);
+      }
+
+      100% {
+            transform: rotate(360deg);
+      }
+}

@@ -20,7 +20,7 @@ const Nav = () => {
                   <ul className={styles.navList}>
                         <li>
                               <button className={styles.toolBtn}>
-                                    <FaBookmark />
+                                    <FaBookmark size={24} color="#f38e82" />
                                     <span className={styles.toolText}>
                                           Bookmark
                                     </span>

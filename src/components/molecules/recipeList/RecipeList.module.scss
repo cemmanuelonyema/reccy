@@ -7,6 +7,15 @@
             font-weight: 700;
             font-size: 1.8rem;
       }
+      .length {
+            font-weight: 700;
+            color: var(--black);
+            padding-right: 5px;
+      }
+}
+.span {
+      color: var(--grey-dark-3);
+      font-weight: 300;
 }
 
 .recipes__list {
