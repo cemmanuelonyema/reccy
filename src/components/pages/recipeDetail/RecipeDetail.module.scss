@@ -1,10 +1,9 @@
 .recipeDetail {
       // FIGURE
       &__fig {
-            height: 32rem;
             position: relative;
             // transform: scale(1.04) translateY(-1px);
-            transform-origin: top;
+            // transform-origin: top;
             padding: 4.4rem 0;
 
             &::before {
@@ -21,6 +20,10 @@
                   //   );
                   //   opacity: 0.6;
             }
+      }
+
+      .imgBox {
+            height: 35rem;
       }
 
       &__img {

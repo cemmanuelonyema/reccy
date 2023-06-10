@@ -83,11 +83,13 @@ export const RecipeDetail = () => {
                               <h1 className={styles.recipeDetail__title}>
                                     <span>{recipe?.title}</span>
                               </h1>
-                              <img
-                                    src={recipe?.image_url}
-                                    alt={recipe?.title}
-                                    className={styles.recipeDetail__img}
-                              />
+                              <div className={styles.imgBox}>
+                                    <img
+                                          src={recipe?.image_url}
+                                          alt={recipe?.title}
+                                          className={styles.recipeDetail__img}
+                                    />
+                              </div>
                         </figure>
 
                         <div class={styles.recipeDetail__ingredients}>
@@ -101,7 +103,7 @@ export const RecipeDetail = () => {
                                           >
                                                 <FaCheckCircle
                                                       size={24}
-                                                      color="#55c57a"
+                                                      color="#f38e82"
                                                 />
 
                                                 <div

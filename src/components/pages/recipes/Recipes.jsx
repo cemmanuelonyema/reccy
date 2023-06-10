@@ -17,7 +17,7 @@ export const Recipes = () => {
                         </div>
                         <RecipeList />
                         <Pagination />
-                        <ToTop />
+                        {/* <ToTop /> */}
                   </div>
                   <Footer />
             </section>
