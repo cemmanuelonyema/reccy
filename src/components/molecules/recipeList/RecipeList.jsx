@@ -14,12 +14,12 @@ export const RecipeList = () => {
       const indexOfFirstPage = indexOfLastPage - itemsPerPage;
       const currentItems = recipes.slice(indexOfFirstPage, indexOfLastPage);
 
-      if (recipes !== null && recipes.length === 0) {
-            return <EmptyState />;
-      }
-
       if (loading) {
             return <Loading />;
+      }
+
+      if (recipes !== null && recipes.length === 0) {
+            return <EmptyState />;
       }
 
       return (

@@ -5,6 +5,7 @@ import {
       GET_SEARCH_RECIPE,
       NEXT_PAGE,
       PREVIOUS_PAGE,
+      SET_LOADING,
 } from '../actionTypes';
 import { recipeReducer } from './recipeReducer';
 export const RecipeContext = createContext();
@@ -13,7 +14,7 @@ export const RecipeProvider = ({ children }) => {
       const initialState = {
             recipes: [],
             recipe: {},
-            loading: true,
+            loading: false,
             currentPage: 1,
             itemsPerPage: 12,
       };
@@ -23,6 +24,7 @@ export const RecipeProvider = ({ children }) => {
       const baseUrl = 'https://forkify-api.herokuapp.com/api/v2/recipes';
 
       const getSearchRecipes = async (query) => {
+            setLoading();
             try {
                   const url = `${baseUrl}/?search=${query}`;
                   const res = await axios.get(url);
@@ -40,6 +42,7 @@ export const RecipeProvider = ({ children }) => {
       };
 
       const getRecipe = async (id) => {
+            setLoading();
             try {
                   const url = `${baseUrl}/${id}`;
                   const res = await axios.get(url);
@@ -65,6 +68,12 @@ export const RecipeProvider = ({ children }) => {
             });
       };
 
+      const setLoading = () => {
+            dispatch({
+                  type: SET_LOADING,
+            });
+      };
+
       return (
             <RecipeContext.Provider
                   value={{
@@ -77,6 +86,7 @@ export const RecipeProvider = ({ children }) => {
                         getRecipe,
                         prevPage,
                         nextPage,
+                        setLoading,
                   }}
             >
                   {children}
