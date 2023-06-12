@@ -3,10 +3,17 @@ import {
       GET_SEARCH_RECIPE,
       NEXT_PAGE,
       PREVIOUS_PAGE,
+      SET_LOADING,
 } from '../actionTypes';
 
 export const recipeReducer = (state, action) => {
       switch (action.type) {
+            case SET_LOADING:
+                  return {
+                        ...state,
+
+                        loading: true,
+                  };
             case GET_SEARCH_RECIPE:
                   return {
                         ...state,

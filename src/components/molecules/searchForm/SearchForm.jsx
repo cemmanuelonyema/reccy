@@ -35,7 +35,7 @@ export const SearchForm = () => {
 
       return (
             <form className={styles.form} onSubmit={handleSubmit}>
-                  <FaSearch size={18} />
+                  <FaSearch size={18} color="#f38e82" />
 
                   <input
                         className={styles.form__field}
@@ -45,7 +45,7 @@ export const SearchForm = () => {
                         value={query}
                   />
 
-                  {query && <FaTimes size={18} />}
+                  {query && <FaTimes size={18} color="#f38e82" />}
             </form>
       );
 };

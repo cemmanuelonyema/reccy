@@ -1,0 +1,23 @@
+.empty,
+.error {
+      max-width: 40rem;
+      margin: 08rem auto;
+      padding: 5rem 4rem;
+
+      display: flex;
+      text-align: center;
+
+      svg {
+            height: 3rem;
+            width: 3rem;
+            fill: var(--primary-color);
+            transform: translateY(-0.3rem);
+      }
+
+      p {
+            margin-left: 1.5rem;
+            font-size: 1.8rem;
+            line-height: 1.5;
+            font-weight: 600;
+      }
+}

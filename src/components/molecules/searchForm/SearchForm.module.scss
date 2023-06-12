@@ -7,7 +7,7 @@
       border-radius: 10rem;
       padding: 0.5rem 3rem;
       transition: all 0.3s;
-      border: 1px solid black;
+      border: 1px solid var(--grey-dark-2);
       flex: 0 0 60%;
 
       &:focus-within {

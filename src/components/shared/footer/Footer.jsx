@@ -10,7 +10,7 @@ export const Footer = () => {
                               &copy; {date.getFullYear()} Reccy - Developed by
                               &nbsp;
                               <a
-                                    href="https://ceo-ox.vecel.app"
+                                    href="https://cemmanuelonyema.vercel.app"
                                     target="_blank"
                               >
                                     Emmanuel Onyema
